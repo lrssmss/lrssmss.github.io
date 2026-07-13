@@ -81,7 +81,7 @@ h2 { font-size: 26px; margin: 40px 0 12px; }
 h3 { font-size: 19px; margin: 26px 0 6px; color: var(--accent); }
 p { margin: 0 0 16px; }
 a { color: var(--accent); }
-.lede { font-family: var(--font-ui); font-size: 19px; font-weight: 400; color: var(--muted); margin-bottom: 26px; line-height: 1.45; }
+.lede { font-family: var(--font-ui); font-size: 18px; font-weight: 400; color: var(--muted); margin-bottom: 26px; line-height: 1.5; }
 .muted { color: var(--muted); }
 hr { border: none; border-top: 1px solid var(--line); margin: 34px 0; }
 
