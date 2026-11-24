@@ -1,70 +1,99 @@
-# Personal website — setup and automation
+# Academic website: setup, reuse and maintenance
 
-A complete static website. No build step, no server. The publications page updates itself from your ORCID record, so once it is live you rarely touch it.
+Source of [lukas.rass-masson.eu](https://lukas.rass-masson.eu). A static site: no server, no build step, free hosting on GitHub Pages. The Publications page updates itself from ORCID, which is fed by HAL, so once the site is live there is almost nothing left to do.
+
+The site can be reused as a template by colleagues: follow the steps below.
 
 ## Files
 
 ```
-site/
-├── index.html          Home
-├── research.html       Research statement (past / current / future)
-├── publications.html   Auto-updating publication list
-├── teaching.html       Teaching and doctoral supervision
-├── cv.html             Short CV (+ link to a PDF you add)
-├── ai.html             How I use AI in my scientific work
-├── contact.html        Contact details
-├── style.css           Shared styling
-├── pubs.js             Live ORCID feed + fallback list
-└── README.md           This file
+index.html          Home (photo, introduction, profile links)
+research.html       Research (past / current / future)
+publications.html   Publication list, updated automatically
+teaching.html       Teaching and doctoral supervision
+cv.html             Short CV + link to the PDF CV
+engagement.html     Public engagement
+ai.html             How I use AI in my work
+contact.html        Contact
+style.css           Shared styling
+pubs.js             Live ORCID feed + fallback list
+fonts/              Self-hosted fonts (OFL, free to reuse)
+*.jpg               Photos (portrait, banner)
+CV_Lukas_Rass-Masson.pdf
+CNAME               Custom domain
 ```
 
-## How the automation works
+## Before you start
 
-- **Source of truth:** you deposit a publication once in **HAL** (idHal `lukas-rass-masson`).
-- **HAL pushes to ORCID:** enable this once (steps below). New HAL deposits then appear on your ORCID record automatically.
-- **The website reads ORCID live:** `publications.html` calls the ORCID public API in the visitor's browser each time the page loads. Verified working: 65 works, loads cross-origin, no build needed.
-- **Net result:** add to HAL, and both ORCID and the website follow. Zero manual editing of the site.
+- An idHal and an ORCID iD (orcid.org, free).
+- A GitHub account (github.com, free), created yourself.
+- Optional: a domain name (OVH, Gandi...), about €10 a year.
 
-If ORCID is ever unreachable, the page shows a short curated list instead of an empty page, then refreshes automatically once the feed is back.
+## 1. Get the template
 
-## Part A — Enable HAL to ORCID push (once)
+Open https://github.com/lrssmss/lrssmss.github.io, green **Code** button → **Download ZIP**, then unzip.
 
-1. Sign in to HAL, open **Mon espace → Mon profil** (AuréHAL).
-2. Find the ORCID section and connect your ORCID iD (`0000-0002-6462-7270`), authorising HAL when ORCID asks.
-3. Turn on sending / exporting your HAL publications to ORCID.
+## 2. Personalise
 
-Exact menu labels change; if you want, I can walk you through it live in Chrome once you are signed in to HAL and ORCID.
+**Delete** `CNAME` (otherwise the site will try to use my domain), my PDF CV and my photos (`headshot-avatar.jpg`, `hero-toulouse.jpg`, `website-banner.jpg`). Add your own images under the same names, or change the names in `index.html`.
 
-## Part B — Enable ORCID auto-update from Crossref (once, optional)
+**Replace my identifiers** in every file. Easiest: open the folder in a free editor (VS Code or Notepad++) and use "Find / replace in all files":
 
-1. Sign in at orcid.org.
-2. When ORCID offers to enable **auto-update** (or via **Account settings → Trusted parties**), authorise **Crossref Metadata Search** as a trusted organisation.
-3. New articles that Crossref indexes under your ORCID are then proposed to your record automatically.
+| Item | My value to replace |
+|---|---|
+| ORCID (in `pubs.js` and every page footer) | `0000-0002-6462-7270` |
+| idHal | `lukas-rass-masson` |
+| Google Scholar | `Xp09ypEAAAAJ` |
+| SSRN | `3923731` |
+| LinkedIn | `lukas-rass-masson-1001981a2` |
+| Name | `Lukas Rass-Masson` |
 
-This is a useful backstop alongside the HAL push.
+Remove the link to any profile you do not have rather than leaving it empty.
 
-## Part C — Publish on GitHub Pages (free)
+**Rewrite the texts** on every page: they are written in the first person, for me. An unneeded page (for example `ai.html` or `engagement.html`) can be deleted: then remove its link from the menu at the top of every page.
 
-1. Create a free account at github.com (your action; I cannot create accounts or log in for you).
-2. Create a new repository named exactly `YOURUSERNAME.github.io`.
-3. Upload the contents of this `site/` folder into the repository (the web UI supports drag-and-drop of all files at once).
-4. Open **Settings → Pages**, set **Source** to *Deploy from a branch*, branch `main`, folder `/ (root)`, and Save.
-5. In about a minute the site is live at `https://YOURUSERNAME.github.io`.
+**Fallback list**: in `pubs.js`, replace the `FALLBACK` list with five or six key publications. It only shows if ORCID is temporarily unreachable.
 
-### Optional custom domain
+**Language**: the template is in English. For a French site, change `lang="en"` to `lang="fr"` at the top of every page and translate the menu labels.
 
-In **Settings → Pages → Custom domain**, enter a domain you own (for example your name), then add the DNS records GitHub shows you at your registrar. GitHub issues an HTTPS certificate automatically.
+Tip: an AI assistant (Claude, for example) handles this personalisation well from a CV, provided every page is reread.
 
-## Before publishing — quick checklist
+## 3. Automate publications (HAL → ORCID → site)
 
-- [ ] Swap the placeholder email on `contact.html` for your institutional UT-Capitole address.
-- [ ] Add a real photo (replace the placeholder box on `index.html`) or remove it.
-- [ ] Drop `CV_Lukas_Rass-Masson.pdf` into the folder if you want the CV download button to work.
-- [ ] Read `research.html` and `ai.html` once more; they are written in your voice and make commitments about your practice.
-- [ ] Confirm the space law axis on `research.html` (listed as current).
+1. **HAL to ORCID**: in HAL, **Mon espace → Mon profil**, link your ORCID iD, authorise HAL, then turn on sending deposits to ORCID.
+2. **Crossref to ORCID** (optional): on orcid.org, **Account settings → Trusted parties**, authorise **Crossref**. New indexed articles are then proposed automatically.
+3. **Visibility**: on ORCID, set works to **Everyone**. Otherwise the Publications page stays empty.
 
-## Maintenance
+Result: one deposit in HAL is enough, ORCID and then the site follow. `publications.html` calls the ORCID public API in the visitor's browser each time the page loads.
 
-- Deposit new work in HAL. Everything else follows.
-- Revisit the research and AI statements about once a year.
-- Update roles and bio when they change (edit the relevant `.html` file).
+## 4. Publish on GitHub Pages
+
+1. On GitHub, create a public repository named exactly `USERNAME.github.io`.
+2. **Add file → Upload files**: drag and drop the whole content of the folder (not the folder itself), then **Commit changes**.
+3. **Settings → Pages**: *Source* = *Deploy from a branch*, branch `main`, folder `/ (root)`, **Save**.
+4. One or two minutes later the site is live at `https://USERNAME.github.io`.
+
+## 5. Custom domain (optional)
+
+My setup: a subdomain (`lukas.rass-masson.eu`) of a domain bought from OVH.
+
+1. At the registrar (OVH: **DNS zone → Add an entry**), create a **CNAME** record: subdomain (e.g. `lukas`) → `USERNAME.github.io.`
+2. On GitHub, **Settings → Pages → Custom domain**: enter the full domain and save. GitHub then creates the `CNAME` file in the repository: it is required, without it the domain does not answer.
+3. Once the certificate is issued (minutes to a few hours), tick **Enforce HTTPS**.
+
+For a domain without a subdomain (e.g. `name.fr`), GitHub shows on the same page the A records to create.
+
+## Keeping the site up to date
+
+- **Publications**: deposit in HAL, nothing else to do.
+- **CV**: upload the new PDF under the same name (**Add file → Upload files** replaces the old one); if the name changes, update the link in `cv.html`.
+- **Texts**: on GitHub, open the file, pencil icon, edit, **Commit changes**. Live within a minute.
+- Reread the Research and AI pages about once a year.
+
+## Check before announcing the site
+
+- [ ] No trace left of my name or identifiers (search "Rass-Masson" across the folder).
+- [ ] `CNAME` deleted, or replaced with your own domain.
+- [ ] Photos and PDF CV replaced.
+- [ ] Publications page fills up (otherwise check ORCID and its visibility).
+- [ ] Every profile link opens the right profile.
