@@ -55,6 +55,8 @@ body.prof #board .tile{cursor:pointer}
 #board .txt{transition:opacity .5s}
 #board.clean .txt{opacity:0}
 #board.clean .veil{fill-opacity:0}
+.face .scin{--lab-op:.14;--med-op:.35}
+#board.clean .face .scin{--lab-op:1;--med-op:1}
 body.prof #board .tile:hover .slot path,body.prof #board .tile:focus .slot path{stroke:var(--ink)}
 @media (prefers-reduced-motion:reduce){#board .face,#board .txt{transition:none}}
 .legend{border:1px solid var(--line);border-radius:6px;background:var(--paper);display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--display);font-size:15px;color:var(--muted);padding:10px 14px;border-top:1px solid var(--line)}
@@ -224,6 +226,9 @@ let DATA = null, CORR = null, state = {revealed:[], absent:[]}, current = null, 
 const $ = (s, el=document) => el.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+// Mots-clés des pièces, encodés (pas en clair dans la page) : décodés seulement pour une pièce retournée au pupitre.
+const KWX = {"1": "DQQEHxpUDBcbBxEZTA8WT9OxRSRdWktVURAECidSHREHAAwBBkkBD0UbGxEAAg==", "10": "BwoDUxcBcFFDS1Re3asRGQYfFQEACRoMHx8LHxsWAQAX", "11": "EQIHEQ1MGwFPHRcMIltBkPJfBEgXCxceERkVBAQGH8WtARMUHBA0WFxbRV8bDhARGhARO0UOAAAAABwAGxsRDCI=", "12": "DQ8IBQ0KHFMcCjlAR1xCQx3BoBcOFBocFw4BEAAADwwVHAEAAg==", "13": "AgcQSQkKRQEcGxExQFtcQoS3GhMZFR0BBQkOHBAbDQoRHBEeAAM=", "14": "FhgFAAUGDAAYDwgdHBQLORRbVlhZFQYKCAAWAMCmDwcXHA0SAgEGHwg5QEZcU1kHCg8AIVMRBQkOBgwAGA8IHRwUCzk=", "15": "GwYbxK0NHwBSFjVQFVxYXxvBoA0GDxEAFwQNCx0CCxfLsBoVAw==", "16": "ABEHDAwBEQZMHQAdAx0XIBRGXEINEQxDABEdFRoWAgkNBwMNGQgdBwg9VUFKU2xUBgYLFxQdDEUZDQdJHwcLGx0cABs=", "17": "BwMHFg4GARY5UBUVX0IdHA0ABNq3GxUXBgwAGAAAGdexFwA=", "18": "2rEXOUBQSxFYEQEPRV4fFQoKB0gXBwkDAAMcAQwsQFxcWUMRDAYMGhAHDAIJKUMMBA0MAwcA05M=", "19": "CR0LAAPbpiIUUF0RWR0HEQEOFBocCQcNFxoeDwEBFhUAFw==", "2": "EnN3GQANWgQCRUFBTEnCqUgWDUzVp08HGwoiUBVcQ1kBCUPOsA8AAQYOOkMaCQkMGwAcCiM=", "20": "CwsGEgAKIFlQTV9CF0gGFxscABoMA08PSQkKRdSxUgAlWFpKU0xUw6FFFx0aBhYZDRMVCRoNDBoaBiNRUk1YSC5IEQAWUxoGFhkNM0kJGhADHAEHMQ==", "21": "Cz9dQVhCRBkRDQocEggOCx4aBgAfBwgWHR0LEQ==", "22": "Dwgex6YB2rECcECf+kOEtxwNDFUXVB0ECcGgDRALFhwWAAAkWnwZXEgaAQYIFxQYBQRLBgwfTAsRGxIQABQ=", "23": "FxEgWVpaEUMRSAYWGwEESQAPSA0GBRoECBoeBz9IQVFSRBgOExYVHQEODB8AAAAfBQbTsAAAEg==", "24": "26YlUFRLVg0aBwoRERYABhcbSAYNTBoVChAcCjNIQUlUVxoHCB8GBhwKNksbBh0KGxEcFhUHMQ==", "25": "BgwMBhIXAAMCGgIFD04AC1MXFyVQnPpSQgYYHwsXARwIAxkNFRoLABAd17EJGw==", "26": "yLZJFh4EE0nK7occBh4VcJ/3GVRBAQURChQPGAwIGQclRAMaFgoXXwAa", "27": "SBcGBgIAFgIHCggUGQcJCRcKBRwKGw==", "28": "DMWtEwYBAkU1XUMZUEFUDQdFBxINBgsXDw0cGAIEGwAXAiNaUFtUYVQaBhETBR0bFUsAAAAJHAANHQAAGw==", "29": "SlRYBQEXBB8BGw8LAkgQDAHGphsACxZwR1BdEYS3HAoXFdq3HQsCTw9JzK1FGxZSzJNAXFVQRAAGBgEbFRoGBksJD0nMrUUDEgYLNVlUXV9CEkgXDB0BEBURAwsGGwgAEB00XzEZ", "3": "AAw3VRJdEUgYCRHMsR3dqgJLwaAdHgsHBh8OETlRXVBUXxIbBAsHHxAHBCNIBgcFCwgKFB4JMQ==", "30": "NVdbWFVfGwsNChFTBwcEGEgGBMatCE8WBgs5UUFNUFEGDQUDFwEgSQAFAAxJCggMHRQcDBU=", "31": "VF4dGhMAAAcaDEIHSAYNTMemGxoeBD5aWkpDSARIAglSFhBJEQIHEQ0QGg0MFgAWJF1QUllOHQQN07EABgwVGAYGBAQLCx0WBgsF", "32": "Sl9CHRwCBhsdAQQIBAvKqgDHphtTAQA0FEFcQ04RGx8WGx0ZAAADDQQMCAIAAh0AABY=", "33": "AMKrEAwcTgALUwEAIpz2TVhfFxQNABsBER0MGQMQDgIbAsuwBQcR", "34": "ABkGFxcgFFRVEUgQSA0KGwcVHQwEBBMRCUkBTx0dDCRXXF1DSAAGChkGHBYbAB0bBAcZGhcKBAAABg==", "35": "BhccFhNJAA9IyqoYBxEBFhYMLECR+kVEAAYGATtTEQEGAgQXAQ8LCQcQAQA3", "36": "SkFAERxDFwcWAAoEDRQRBhgFBAkHGwAK", "37": "VQEJFwsXHhUNCwQOQxoYBwodF1IWNVAVXEVfFQAgGRMHBggNCA0XAQ8LFwsdBxcX", "38": "AAcABg0ACAoIAEgfUsWTFEFQXl8QFAQLBxsXGtOoJEMPGQ9FGxsRAAI=", "39": "CRoLDhYVBCJAQFYRSAEZChEbARcVDgIcChsHBsGsHhoGAw==", "4": "ARc1XVlMUkQAGgIVUhYGHQsOSBscDRoLCh4TAT5bUxlCWR0HEQFSABENRR8LBhsFCgsGUwYANlJQRVZDAQMRDAUHAAAXL0gGGw0MCQoHBgw9", "40": "Ch0bBD1BXRmY7gABDQIbFwgMARnUoB4CCw0MABwAHQ==", "5": "AQwiW1lWVQ0ZHQoRFwEESUkZHQYFGQEBTwEHCiAUnPpFRBoFBgEcGggNCQ4PEAcJFBcKHhoGAw==", "6": "nfZNWEMZDQcLG1NYHQsODxEITAAATx0dDCRVR1hBhLcaHwIcBhMAAc+rCwofGgsKFx4AFw==", "7": "DRYYBQgMDNqxFSMUWVxfQxsBFxAGGgAaCwQLQx0FARcLDwYNM1FHSlZDARsQBBQBET9FGA0LCh8HAwYJFxUj", "8": "IkFQUEOEtxwNDFIWFwgVGA0fBBkPFwEWHAsZ", "9": "Bhc/WRVYXQ0HwKAXAhJUwKYfAQ8IAgAKHAEXFXBVWRlUSVQGDAwGEBEdChkYHxMYGw0MAAEROVFeUVJEGAbVpgEBETlFGQ0PCBgcCgIHAQog"};
+function kwOf(id){ const e = KWX[id]; if(!e) return null; try{ const k = new TextEncoder().encode('Persoenlichkeitsrecht-1954'), b = Uint8Array.from(atob(e), c => c.charCodeAt(0)).reverse().map((v,i) => v ^ k[i % k.length]); const [cle, cle_fr] = new TextDecoder().decode(b).split('|'); return {cle, cle_fr}; }catch(err){ return null; } }
 // Corrigé hors claude.ai : jamais publié ; l'enseignant charge son fichier corrige.json depuis son ordinateur (gardé dans ce navigateur seulement).
 const CORRKEY = 'puzzle-corrige-local';
 function load(){ try{ const s = JSON.parse(localStorage.getItem(KEY)||'null'); if(s && Array.isArray(s.revealed)) state = {revealed:s.revealed, absent:s.absent||[]}; }catch(e){} }
@@ -311,12 +316,13 @@ function scene(cx, cy){
     // côté de l'étiquette : vers l'extérieur, sauf si l'on sortirait de la planche
     const D = 96, k0 = posK[i], score = sg => { const qx = px + sg*Math.cos(a)*D*1.25, qy = py + sg*Math.sin(a)*D*.95; let m = Math.min(qx-10, W-10-qx, qy-30, H-30-qy) * 1.2; for(const q of PTS) if(Math.abs(q[3]-k0) > 40) m = Math.min(m, Math.hypot(q[0]-qx, q[1]-qy)); return m; };
     const sg = score(1) >= score(-1) - 25 ? 1 : -1, ox = sg*Math.cos(a), oy = sg*Math.sin(a);
-    s += `<circle cx="${px}" cy="${py}" r="40" fill="#0a1424" stroke="${ERAS[e][1]}" stroke-width="4"/>`;
+    s += `<g style="opacity:var(--med-op,1)"><circle cx="${px}" cy="${py}" r="40" fill="#0a1424" stroke="${ERAS[e][1]}" stroke-width="4"/>`;
     if(ic) s += `<g transform="translate(${px-24},${py-24})" fill="none" stroke="#fff6df" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">${ic}</g>`;
+    s += `</g>`;
     const lx = px + ox*D*1.25, ly = py + oy*D*.95, anc = Math.abs(ox) < .35 ? 'middle' : (ox > 0 ? 'start' : 'end'), tx = anc==='middle' ? lx : lx - ox*30;
-    s += `<text class="sc-year" x="${tx}" y="${ly-6}" text-anchor="${anc}" font-size="32">${y}</text>`;
-    s += `<text class="sc-lab" x="${tx}" y="${ly+16}" text-anchor="${anc}" font-size="17">${esc(l1)}</text>`;
-    if(l2) s += `<text class="sc-lab" x="${tx}" y="${ly+35}" text-anchor="${anc}" font-size="15" fill-opacity=".8">${esc(l2)}</text>`; });
+    s += `<text class="sc-year" style="opacity:var(--lab-op,1)" x="${tx}" y="${ly-6}" text-anchor="${anc}" font-size="32">${y}</text>`;
+    s += `<text class="sc-lab" style="opacity:var(--lab-op,1)" x="${tx}" y="${ly+16}" text-anchor="${anc}" font-size="17">${esc(l1)}</text>`;
+    if(l2) s += `<text class="sc-lab" style="opacity:var(--lab-op,1)" x="${tx}" y="${ly+35}" text-anchor="${anc}" font-size="15" fill-opacity=".8">${esc(l2)}</text>`; });
   return s + `</g>`;
 }
 function boardSVG(opts={}){
@@ -338,13 +344,13 @@ function boardSVG(opts={}){
     if(opts.clickable && isAbs(p.id)) s += `<rect x="${x+50}" y="${y+48}" width="${T-100}" height="26" rx="3" fill="var(--bverfg)"/><text class="svg-badge" x="${x+T/2}" y="${y+67}" font-size="15" text-anchor="middle">REPRISE PAR L'ENSEIGNANT</text>`;
     s += `</g>`;
     // pièce posée : un morceau de l'image, puis le texte
-    s += `<g class="face" filter="url(#lift)"><g clip-path="url(#cp${p.id})"><use href="#scene"/><rect class="veil" x="${x-T}" y="${y-T}" width="${3*T}" height="${3*T}" fill="#0a1424" fill-opacity="${isKey?.15:.62}"/></g>`;
+    s += `<g class="face" filter="url(#lift)"><g clip-path="url(#cp${p.id})"><use href="#scene" class="scin"/><rect class="veil" x="${x-T}" y="${y-T}" width="${3*T}" height="${3*T}" fill="#0a1424" fill-opacity="${isKey?.15:.62}"/></g>`;
     s += `<path d="${d}" fill="none" stroke="${isKey?SC.key:'#fff6df'}" stroke-opacity="${isKey?1:.55}" stroke-width="${isKey?5:2}"/>`;
     s += `<g class="txt">`;
-    const b = p.badge || badge(p), bw = 16 + b.length*8.3;
+    const b = p.badge || badge(p), bw = 16 + b.length*8.3, K0 = (CORR && CORR[p.id]) || (opts.clickable && isRev(p.id) ? kwOf(p.id) : null);
     s += `<rect x="${x+44}" y="${y+42}" width="${bw}" height="28" rx="3" fill="${col}"/><text class="svg-badge" x="${x+52}" y="${y+62}" font-size="18" style="fill:#0a1424">${esc(b)}</text>`;
-    if(CORR && CORR[p.id] && p.fr && !isKey && p.fr !== b){ const n = Math.max(4, Math.floor((T - 50 - bw - 8) / 7.4)), nm = p.fr.length > n ? p.fr.slice(0, n-1).replace(/[ ,;:(]*$/,'') + '…' : p.fr; s += `<text class="sc-ref" x="${x+44+bw+8}" y="${y+62}" font-size="16">${esc(nm)}</text>`; }
-    const K = CORR && CORR[p.id], L = lines(K ? K.cle : p.fr), fs = L.length>2 ? 25 : 29;
+    if(K0 && p.fr && !isKey && p.fr !== b){ const n = Math.max(4, Math.floor((T - 50 - bw - 8) / 7.4)), nm = p.fr.length > n ? p.fr.slice(0, n-1).replace(/[ ,;:(]*$/,'') + '…' : p.fr; s += `<text class="sc-ref" x="${x+44+bw+8}" y="${y+62}" font-size="16">${esc(nm)}</text>`; }
+    const K = K0, L = lines(K ? K.cle : p.fr), fs = L.length>2 ? 25 : 29;
     L.forEach((l,i)=>{ s += `<text class="sc-de" x="${x+44}" y="${y+104 + i*(fs+2)}" font-size="${fs}">${esc(l)}</text>`; });
     const fy = y + 104 + L.length*(fs+2) + 6;
     clip(wrap2(K ? (K.cle_fr ? '('+K.cle_fr+')' : '') : (p.fr_trad || ''), 21), 2).forEach((l,i)=>{ s += `<text class="sc-fr" x="${x+44}" y="${fy + i*20}" font-size="17">${esc(l)}</text>`; });
