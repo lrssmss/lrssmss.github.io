@@ -724,8 +724,8 @@
    "ordre": 16,
    "cour": "BVerfG",
    "badge": "BVerfG 1989",
-   "ref": "BVerfG, 31 janvier 1989, 1 BvL 17/87, BVerfGE 79, 256 (Kenntnis der eigenen Abstammung, « connaissance de ses origines »)",
-   "fr": "Kenntnis der eigenen Abstammung",
+   "ref": "BVerfG, 31 janvier 1989, 1 BvL 17/87, BVerfGE 79, 256",
+   "fr": "Ehelichkeitsanfechtung",
    "doc": "Un enfant devenu majeur veut contester la paternité de son père juridique pour faire établir sa filiation biologique. Le BGB de l'époque ne lui ouvre cette action que dans des cas très limités. Un tribunal saisit le BVerfG.",
    "questions": [
     "Savoir de qui l'on descend est-il important pour construire son identité ?",
@@ -747,7 +747,7 @@
      "url": "https://www.servat.unibe.ch/dfr/bv079256.html"
     }
    ],
-   "fr_trad": "connaissance de ses propres origines"
+   "fr_trad": "contestation de paternité par l'enfant majeur"
   },
   {
    "id": 17,
@@ -1007,8 +1007,8 @@
    "ordre": 4,
    "cour": "BGH",
    "badge": "BGH 2007",
-   "ref": "BGH, 6 mars 2007, VI ZR 51/06, BGHZ 171, 275 (abgestuftes Schutzkonzept)",
-   "fr": "abgestuftes Schutzkonzept",
+   "ref": "BGH, 6 mars 2007, VI ZR 51/06, BGHZ 171, 275",
+   "fr": "Winterurlaub",
    "doc": "Nouvelles photos de Caroline et de son mari en vacances aux sports d'hiver. L'une accompagne un article sur la maladie de son père, le prince Rainier, souverain régnant de Monaco. Le BGH doit appliquer les §§ 22 et 23 KUG (pièce 1) après la condamnation de Strasbourg (pièce 22).",
    "questions": [
     "Le BGH conserve-t-il la catégorie de « personne absolue de l'histoire contemporaine » ?",
@@ -1034,7 +1034,7 @@
      "url": "https://www.servat.unibe.ch/dfr/bv120180.html"
     }
    ],
-   "fr_trad": "concept de protection graduée"
+   "fr_trad": "vacances aux sports d'hiver"
   },
   {
    "id": 25,
