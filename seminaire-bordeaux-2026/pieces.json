@@ -1,0 +1,1622 @@
+{
+ "source": "puzzle-vie-privee-droit-allemand.md",
+ "lexique": [
+  {
+   "cat": "Juridictions",
+   "de": "Bundesverfassungsgericht",
+   "abr": "BVerfG",
+   "fr": "Cour constitutionnelle fédérale (Karlsruhe)"
+  },
+  {
+   "cat": "Juridictions",
+   "de": "Bundesgerichtshof",
+   "abr": "BGH",
+   "fr": "Cour fédérale de justice, juridiction suprême civile et pénale (Karlsruhe)"
+  },
+  {
+   "cat": "Juridictions",
+   "de": "Bundesarbeitsgericht",
+   "abr": "BAG",
+   "fr": "Cour fédérale du travail (Erfurt)"
+  },
+  {
+   "cat": "Juridictions",
+   "de": "Oberlandesgericht",
+   "abr": "OLG",
+   "fr": "Cour d'appel d'un Land (à Berlin : Kammergericht, KG)"
+  },
+  {
+   "cat": "Juridictions",
+   "de": "Landgericht",
+   "abr": "LG",
+   "fr": "Tribunal régional, première instance des grands litiges civils et de presse"
+  },
+  {
+   "cat": "Juridictions",
+   "de": "Reichsgericht",
+   "abr": "RG",
+   "fr": "Cour suprême du Reich (jusqu'en 1945)"
+  },
+  {
+   "cat": "Juridictions",
+   "de": "Europäischer Gerichtshof für Menschenrechte",
+   "abr": "EGMR",
+   "fr": "Cour européenne des droits de l'homme (CEDH)"
+  },
+  {
+   "cat": "Juridictions",
+   "de": "Kammer / Senat",
+   "abr": "",
+   "fr": "Chambre de trois juges / formation de huit juges du BVerfG (deux Sénats)"
+  },
+  {
+   "cat": "Textes et sources",
+   "de": "Grundgesetz",
+   "abr": "GG",
+   "fr": "Loi fondamentale (Constitution de 1949)"
+  },
+  {
+   "cat": "Textes et sources",
+   "de": "Bürgerliches Gesetzbuch",
+   "abr": "BGB",
+   "fr": "Code civil (1900)"
+  },
+  {
+   "cat": "Textes et sources",
+   "de": "Kunsturhebergesetz",
+   "abr": "KUG",
+   "fr": "Loi de 1907 sur le droit d'auteur des œuvres d'art et de la photographie (contient le droit à l'image)"
+  },
+  {
+   "cat": "Textes et sources",
+   "de": "Bundesverfassungsgerichtsgesetz",
+   "abr": "BVerfGG",
+   "fr": "Loi sur la Cour constitutionnelle fédérale"
+  },
+  {
+   "cat": "Textes et sources",
+   "de": "Strafgesetzbuch",
+   "abr": "StGB",
+   "fr": "Code pénal"
+  },
+  {
+   "cat": "Textes et sources",
+   "de": "Datenschutz-Grundverordnung",
+   "abr": "DSGVO",
+   "fr": "RGPD"
+  },
+  {
+   "cat": "Textes et sources",
+   "de": "BVerfGE 65, 1",
+   "abr": "",
+   "fr": "Recueil officiel du BVerfG, tome 65, page 1"
+  },
+  {
+   "cat": "Textes et sources",
+   "de": "BGHZ 13, 334",
+   "abr": "",
+   "fr": "Recueil officiel du BGH en matière civile, tome 13, page 334"
+  },
+  {
+   "cat": "Notions clés",
+   "de": "allgemeines Persönlichkeitsrecht (APR)",
+   "abr": "",
+   "fr": "droit général de la personnalité"
+  },
+  {
+   "cat": "Notions clés",
+   "de": "Grundrecht",
+   "abr": "",
+   "fr": "droit fondamental"
+  },
+  {
+   "cat": "Notions clés",
+   "de": "Verfassungsbeschwerde",
+   "abr": "",
+   "fr": "recours constitutionnel individuel"
+  },
+  {
+   "cat": "Notions clés",
+   "de": "Abwägung",
+   "abr": "",
+   "fr": "pesée (mise en balance) des intérêts"
+  },
+  {
+   "cat": "Notions clés",
+   "de": "Eingriff",
+   "abr": "",
+   "fr": "atteinte, ingérence"
+  },
+  {
+   "cat": "Notions clés",
+   "de": "Urteil / Beschluss",
+   "abr": "",
+   "fr": "arrêt (après audience) / décision (sans audience)"
+  },
+  {
+   "cat": "Notions clés",
+   "de": "Revision",
+   "abr": "",
+   "fr": "pourvoi en révision (équivalent fonctionnel du pourvoi en cassation)"
+  },
+  {
+   "cat": "Notions clés",
+   "de": "Unterlassung",
+   "abr": "",
+   "fr": "cessation, interdiction"
+  },
+  {
+   "cat": "Notions clés",
+   "de": "Pressefreiheit, Kunstfreiheit, Meinungsfreiheit",
+   "abr": "",
+   "fr": "liberté de la presse, de l'art, d'expression"
+  }
+ ],
+ "pieces": [
+  {
+   "id": 1,
+   "r": 2,
+   "c": 0,
+   "eleve": "Camille Desliens",
+   "groupe": "Le droit à l'image",
+   "seance": 1,
+   "ordre": 1,
+   "cour": "Loi",
+   "badge": "KUG 1907",
+   "ref": "Kunsturhebergesetz (KUG, loi sur le droit d'auteur des œuvres d'art et de la photographie), 9 janvier 1907, §§ 22 et 23",
+   "fr": "KUG, 1907",
+   "doc": "En 1898, deux photographes s'introduisent dans la chambre mortuaire du chancelier Bismarck et photographient le corps. Faute de texte, le Reichsgericht (Cour suprême du Reich) ne peut les sanctionner que pour violation de domicile. La loi de 1907 réagit. § 22 : « Bildnisse dürfen nur mit Einwilligung des Abgebildeten verbreitet oder öffentlich zur Schau gestellt werden. » (Les portraits ne peuvent être diffusés ou exposés publiquement qu'avec le consentement de la personne représentée.) § 23 al. 1 n° 1 : sans consentement, peuvent être diffusés les « Bildnisse aus dem Bereiche der Zeitgeschichte » (portraits relevant de l'histoire contemporaine), sauf si un intérêt légitime de la personne s'y oppose (§ 23 al. 2).",
+   "questions": [
+    "Quelle est la règle, quelle est l'exception ?",
+    "Après le décès, qui doit consentir, et pendant combien de temps (§ 22 phrases 3 et 4) ?",
+    "Comparez avec l'art. 9 du Code civil (1970) : quel droit a protégé l'image par un texte spécial en premier ?"
+   ],
+   "choix": {
+    "enonce": "Le § 22 KUG consacre le droit de chacun sur « sa propre ______ ». En allemand :",
+    "options": [
+     "sonstiges Recht",
+     "Gegendarstellung",
+     "Recht am eigenen Bild"
+    ]
+   },
+   "extrait": "« Bildnisse dürfen nur mit Einwilligung des Abgebildeten verbreitet oder öffentlich zur Schau gestellt werden. » (§ 22 phrase 1 KUG)\n**Traduction :** « Les portraits ne peuvent être diffusés ou exposés publiquement qu'avec le consentement de la personne représentée. »",
+   "liens": [
+    {
+     "label": "§ 22 KUG",
+     "url": "https://www.gesetze-im-internet.de/kunsturhg/__22.html"
+    },
+    {
+     "label": "§ 23 KUG",
+     "url": "https://www.gesetze-im-internet.de/kunsturhg/__23.html"
+    }
+   ],
+   "fr_trad": "loi sur le droit d'auteur sur les œuvres d'art et la photographie, 1907"
+  },
+  {
+   "id": 2,
+   "r": 2,
+   "c": 1,
+   "eleve": "Inès Azizi",
+   "groupe": "Le secret des correspondances",
+   "seance": 1,
+   "ordre": 2,
+   "cour": "BGH",
+   "badge": "BGH 1954",
+   "ref": "BGH, 25 mai 1954, I ZR 211/53, BGHZ 13, 334 (Leserbrief, « lettre de lecteur »)",
+   "fr": "Leserbrief",
+   "doc": "Un avocat adresse à un hebdomadaire, au nom de son client Hjalmar Schacht (ancien ministre de l'Économie du Reich), une demande de rectification. Le journal la publie, tronquée, dans le courrier des lecteurs, comme si l'avocat exprimait son opinion personnelle. Le Code civil allemand (BGB, 1900) ne connaît que des droits de la personnalité spéciaux : le nom (§ 12 BGB) et l'image (KUG, pièce 1). Le § 823 al. 1 BGB oblige à réparer l'atteinte illicite à « la vie, le corps, la santé, la liberté, la propriété ou un autre droit » (« ein sonstiges Recht »).",
+   "questions": [
+    "Le BGB de 1900 protège-t-il la personnalité en général ?",
+    "Sur quels articles de la nouvelle Loi fondamentale (Grundgesetz, 1949) le BGH s'appuie-t-il pour reconnaître un droit général de la personnalité ?",
+    "Dans quelle catégorie du § 823 al. 1 BGB le range-t-il, puisqu'il n'est ni la vie, ni le corps, ni la propriété ?"
+   ],
+   "choix": {
+    "enonce": "Le droit de la personnalité est un « ______ droit » au sens du § 823 al. 1 BGB. En allemand :",
+    "options": [
+     "sonstiges Recht",
+     "Grundrechtecharta",
+     "Schmähkritik"
+    ]
+   },
+   "extrait": "« Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein **sonstiges Recht** eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet. » (§ 823 al. 1 BGB)\n**Traduction :** « Quiconque, intentionnellement ou par négligence, porte atteinte de manière illicite à la vie, au corps, à la santé, à la liberté, à la propriété ou à **un autre droit** d'autrui est tenu de réparer le dommage qui en résulte. »",
+   "liens": [
+    {
+     "label": "§ 823 BGB",
+     "url": "https://www.gesetze-im-internet.de/bgb/__823.html"
+    },
+    {
+     "label": "Art. 2 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_2.html"
+    }
+   ],
+   "fr_trad": "lettre de lecteur"
+  },
+  {
+   "id": 3,
+   "r": 0,
+   "c": 0,
+   "eleve": "Louis Aboulin",
+   "groupe": "La personne morale a-t-elle une vie privée ?",
+   "seance": 1,
+   "ordre": 3,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1957",
+   "ref": "BVerfG, 16 janvier 1957, 1 BvR 253/56, BVerfGE 6, 32 (Elfes)",
+   "fr": "Elfes",
+   "doc": "Wilhelm Elfes, homme politique opposé à la politique de réarmement du gouvernement Adenauer, se voit refuser un passeport. Aucun article du GG ne garantit expressément le droit de quitter le territoire. Il invoque l'art. 2 al. 1 GG : « Chacun a droit au libre épanouissement de sa personnalité (freie Entfaltung der Persönlichkeit), pourvu qu'il ne viole pas les droits d'autrui, ni l'ordre constitutionnel, ni la loi morale. »",
+   "questions": [
+    "L'art. 2 al. 1 GG protège-t-il seulement un noyau de la personnalité, ou toute action humaine ?",
+    "Que signifie qu'il est un droit « balai » (Auffanggrundrecht, droit fondamental de rattrapage) ?",
+    "Question de groupe : une personne morale peut-elle invoquer l'art. 2 al. 1 GG ? Lisez l'art. 19 al. 3 GG (les droits fondamentaux s'appliquent aux personnes morales nationales dans la mesure où leur nature le permet)."
+   ],
+   "choix": {
+    "enonce": "Le BVerfG lit l'art. 2 al. 1 GG comme une « liberté ______ d'agir ». En allemand :",
+    "options": [
+     "informationelle Selbstbestimmung",
+     "Selbstdarstellung",
+     "allgemeine Handlungsfreiheit"
+    ]
+   },
+   "extrait": "« Die Ausreisefreiheit ist als Ausfluß der **allgemeinen Handlungsfreiheit** durch Art. 2 Abs. 1 GG […] gewährleistet. » (BVerfGE 6, 32, principe 2 (extrait))\n**Traduction :** « La liberté de quitter le territoire est garantie par l'art. 2 al. 1 GG, en tant qu'émanation de la **liberté générale d'agir**. »",
+   "liens": [
+    {
+     "label": "BVerfGE 6, 32 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv006032.html"
+    },
+    {
+     "label": "Art. 2 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_2.html"
+    },
+    {
+     "label": "Art. 19 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_19.html"
+    }
+   ],
+   "fr_trad": "passeport refusé à W. Elfes"
+  },
+  {
+   "id": 4,
+   "r": 0,
+   "c": 1,
+   "eleve": "Margaux Ducout",
+   "groupe": "Vie privée et vie professionnelle",
+   "seance": 1,
+   "ordre": 4,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1958",
+   "ref": "BVerfG, 15 janvier 1958, 1 BvR 400/51, BVerfGE 7, 198 (Lüth)",
+   "fr": "Lüth",
+   "doc": "Erich Lüth, directeur du service de presse de la ville de Hambourg, appelle au boycott d'un film de Veit Harlan, réalisateur du film de propagande antisémite « Jud Süß » (1940). Les juridictions civiles de Hambourg lui interdisent cet appel, sur le fondement du § 826 BGB (dommage causé intentionnellement de manière contraire aux bonnes mœurs). Lüth forme un recours constitutionnel (Verfassungsbeschwerde) contre ce jugement.",
+   "questions": [
+    "Un litige entre particuliers relève-t-il du BVerfG ? Contre quel acte le recours est-il dirigé ?",
+    "Le BVerfG dit que les droits fondamentaux forment un « ordre objectif de valeurs » qui « rayonne » (Ausstrahlungswirkung, effet de rayonnement) sur tout le droit. Par quelles dispositions du droit civil ce rayonnement passe-t-il ?",
+    "Les droits fondamentaux s'imposent-ils alors directement aux particuliers, ou seulement par l'intermédiaire du juge qui interprète le droit civil ?"
+   ],
+   "choix": {
+    "enonce": "L'effet des droits fondamentaux entre particuliers (envers les « tiers », Dritte) n'est pas direct mais « ______ ». En allemand :",
+    "options": [
+     "Gesetzesvorbehalt",
+     "mittelbare Drittwirkung",
+     "Konvergenz"
+    ]
+   },
+   "extrait": "« […] objektive Wertordnung, die als verfassungsrechtliche Grundentscheidung für alle Bereiche des Rechts gilt. […] So beeinflußt es selbstverständlich auch das bürgerliche Recht; » (BVerfGE 7, 198, principe 1 et p. 205 (extraits))\n**Traduction :** « […] un ordre objectif de valeurs qui, en tant que choix constitutionnel fondamental, vaut pour tous les domaines du droit. […] Il influence donc naturellement aussi le droit civil. »",
+   "liens": [
+    {
+     "label": "BVerfGE 7, 198 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv007198.html"
+    }
+   ],
+   "fr_trad": "appel au boycott d'E. Lüth"
+  },
+  {
+   "id": 5,
+   "r": 2,
+   "c": 2,
+   "eleve": "Sonia Benlhassen",
+   "groupe": "La vie privée du dirigeant",
+   "seance": 1,
+   "ordre": 5,
+   "cour": "BGH",
+   "badge": "BGH 1958",
+   "ref": "BGH, 14 février 1958, I ZR 151/56, BGHZ 26, 349 (Herrenreiter, « le cavalier »)",
+   "fr": "Herrenreiter",
+   "doc": "Un brasseur, cavalier de saut d'obstacles à ses heures, est photographié lors d'un tournoi. La photo est reprise sans son accord dans la publicité d'un fortifiant sexuel. Il demande une indemnité pour son préjudice moral. Le § 253 BGB (version de 1900) n'admet la réparation en argent du préjudice non patrimonial « que dans les cas prévus par la loi » ; l'ancien § 847 BGB en prévoyait une pour les atteintes au corps, à la santé et en cas de privation de liberté (Freiheitsentziehung).",
+   "questions": [
+    "La loi de 1907 (KUG, pièce 1) permet-elle d'interdire la publicité ? Prévoit-elle une indemnisation du préjudice moral ?",
+    "Comment le BGH contourne-t-il le § 253 BGB ? À quel texte compare-t-il l'atteinte à la personnalité ?",
+    "Question de groupe : la notoriété sociale du demandeur réduit-elle ou augmente-t-elle son préjudice ?"
+   ],
+   "choix": {
+    "enonce": "Le BGH accorde, par analogie avec l'ancien § 847 BGB, une « indemnité pour douleur », en allemand littéralement « argent de la douleur ». En allemand :",
+    "options": [
+     "Schmerzensgeld",
+     "Geldentschädigung",
+     "Verwertungsverbot"
+    ]
+   },
+   "extrait": "« Wegen eines Schadens, der nicht Vermögensschaden ist, kann Entschädigung in Geld nur in den durch das Gesetz bestimmten Fällen gefordert werden. » (§ 253 al. 1 BGB (texte identique à celui de 1900 ; l'al. 2 date de 2002))\n**Traduction :** « Pour un dommage qui n'est pas un dommage patrimonial, une indemnité en argent ne peut être demandée que dans les cas déterminés par la loi. »",
+   "liens": [
+    {
+     "label": "§ 253 BGB",
+     "url": "https://www.gesetze-im-internet.de/bgb/__253.html"
+    },
+    {
+     "label": "§ 22 KUG",
+     "url": "https://www.gesetze-im-internet.de/kunsturhg/__22.html"
+    }
+   ],
+   "fr_trad": "le cavalier gentleman"
+  },
+  {
+   "id": 6,
+   "r": 2,
+   "c": 3,
+   "eleve": "Lilie Pestana-Mignon",
+   "groupe": "Vie privée et vie professionnelle",
+   "seance": 1,
+   "ordre": 6,
+   "cour": "BGH",
+   "badge": "BGH 1961",
+   "ref": "BGH, 19 septembre 1961, VI ZR 259/60, BGHZ 35, 363 (Ginseng)",
+   "fr": "Ginseng",
+   "doc": "Un professeur de droit international, auteur d'une étude sur la racine de ginseng, est présenté sans son accord dans une publicité comme un éminent spécialiste d'un produit vendu comme aphrodisiaque. Trois ans plus tôt, le BGH a accordé une indemnité par analogie avec un texte sur la privation de liberté (pièce 5).",
+   "questions": [
+    "En quoi la réputation professionnelle relève-t-elle de la protection de la personnalité ?",
+    "Le BGH maintient-il l'analogie avec le § 847 BGB ? Sur quel fondement fonde-t-il désormais l'indemnité ?",
+    "Ce fondement est-il un texte du Code civil ou de la Constitution ? Pourquoi est-ce important (voir pièce 11) ?"
+   ],
+   "choix": {
+    "enonce": "L'indemnité n'est plus une « indemnité pour douleur » mais une « réparation en ______ » autonome, fondée sur les art. 1 et 2 GG. En allemand :",
+    "options": [
+     "Prävention",
+     "Geldentschädigung",
+     "Anonymisierung"
+    ]
+   },
+   "extrait": "« Denn der Geldentschädigungsanspruch hat zwar seine Grundlage im Schutzauftrag aus Art. 1 und Art. 2 Abs. 1 GG […] und dient gerade den vom allgemeinen Persönlichkeitsrecht umfassten ideellen Interessen. » (BGH, 29 avril 2014, VI ZR 246/12, n° 9, qui cite BGHZ 35, 363 (le texte de 1961 n'est pas librement accessible en ligne))\n**Traduction :** « Le droit à **réparation en argent** trouve certes son fondement dans la mission de protection découlant des art. 1 et 2 al. 1 GG, et sert précisément les intérêts moraux couverts par le droit général de la personnalité. »",
+   "liens": [
+    {
+     "label": "BGH VI ZR 246/12 (Open Legal Data)",
+     "url": "https://de.openlegaldata.io/case/bgh-2014-04-29-vi-zr-24612"
+    }
+   ],
+   "fr_trad": "publicité pour le ginseng"
+  },
+  {
+   "id": 7,
+   "r": 0,
+   "c": 2,
+   "eleve": "Zoé Weber",
+   "groupe": "La vie privée du dirigeant",
+   "seance": 1,
+   "ordre": 7,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1964",
+   "ref": "BVerfG, 10 juin 1964, 1 BvR 37/63, BVerfGE 18, 85 (formule de Heck)",
+   "fr": "Heck",
+   "doc": "Après Lüth (pièce 4), toute partie qui perd un procès civil peut être tentée de saisir Karlsruhe. Le juge rapporteur Karl Heck formule une limite, restée célèbre. Repères : art. 93 al. 1 n° 4a GG et §§ 90 et suivants BVerfGG (recours constitutionnel ouvert à toute personne qui s'estime lésée dans un droit fondamental par la puissance publique) ; § 90 al. 2 BVerfGG (épuisement préalable des voies de recours) ; § 93 BVerfGG (délai d'un mois).",
+   "questions": [
+    "Le BVerfG est-il une « super-instance de révision » (Superrevisionsinstanz) qui revérifie les faits et l'application de la loi civile ?",
+    "Que contrôle-t-il alors exactement dans un jugement civil ?",
+    "Reconstituez le parcours d'un procès de presse : Landgericht (tribunal régional), Oberlandesgericht (cour d'appel), BGH (révision), BVerfG."
+   ],
+   "choix": {
+    "enonce": "Le BVerfG ne contrôle que la violation du « droit constitutionnel ______ ». En allemand :",
+    "options": [
+     "spezifisches Verfassungsrecht",
+     "richterliche Rechtsfortbildung",
+     "Berücksichtigungspflicht"
+    ]
+   },
+   "extrait": "« **Spezifisches Verfassungsrecht** ist aber nicht schon dann verletzt, wenn eine Entscheidung, am einfachen Recht gemessen, objektiv fehlerhaft ist; » (BVerfGE 18, 85, p. 92)\n**Traduction :** « Le **droit constitutionnel spécifique** n'est pas violé du seul fait qu'une décision est objectivement erronée au regard du droit ordinaire. »",
+   "liens": [
+    {
+     "label": "BVerfGE 18, 85 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv018085.html"
+    },
+    {
+     "label": "§ 90 BVerfGG",
+     "url": "https://www.gesetze-im-internet.de/bverfgg/__90.html"
+    }
+   ],
+   "fr_trad": "affaire Heck, contrôle des jugements civils"
+  },
+  {
+   "id": 8,
+   "r": 0,
+   "c": 3,
+   "eleve": "Océane Laforie",
+   "groupe": "La protection des données personnelles",
+   "seance": 1,
+   "ordre": 8,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1969",
+   "ref": "BVerfG, 16 juillet 1969, 1 BvL 19/63, BVerfGE 27, 1 (Mikrozensus, « micro-recensement »)",
+   "fr": "Mikrozensus",
+   "doc": "Une loi sur la statistique impose de répondre à un questionnaire sur les vacances et les voyages. Un tribunal saisit le BVerfG de la constitutionnalité de cette obligation. Repère : art. 1 al. 1 GG, « La dignité de l'être humain est intangible ».",
+   "questions": [
+    "Pourquoi invoquer la dignité humaine contre une simple enquête statistique ? Que serait-il contraire à la dignité de faire d'un être humain ?",
+    "Le BVerfG annule-t-il la loi ? Pourquoi des questions sur les vacances ne posent-elles pas de problème ?",
+    "Le BVerfG décrit un domaine dans lequel chacun reste « seul avec lui-même ». Comment pourriez-vous nommer ce domaine ?"
+   ],
+   "choix": {
+    "enonce": "Chacun dispose d'un « espace ______ » où l'État ne doit pas pénétrer. En allemand :",
+    "options": [
+     "Kernbereich privater Lebensgestaltung",
+     "Zeitfaktor",
+     "Innenraum"
+    ]
+   },
+   "extrait": "« […] dem Einzelnen um der freien und selbstverantwortlichen Entfaltung seiner Persönlichkeit willen ein \"**Innenraum**\" verbleiben muß […] » (BVerfGE 27, 1, p. 6)\n**Traduction :** « […] il doit rester à l'individu, pour le libre épanouissement de sa personnalité sous sa propre responsabilité, un « **espace intérieur** » […] »",
+   "liens": [
+    {
+     "label": "BVerfGE 27, 1 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv027001.html"
+    }
+   ],
+   "fr_trad": "micro-recensement"
+  },
+  {
+   "id": 9,
+   "r": 0,
+   "c": 4,
+   "eleve": "Tao Sanz Ramos",
+   "groupe": "La personne morale a-t-elle une vie privée ?",
+   "seance": 1,
+   "ordre": 9,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1971",
+   "ref": "BVerfG, 24 février 1971, 1 BvR 435/68, BVerfGE 30, 173 (Mephisto) ; BGH, 20 mars 1968, BGHZ 50, 133",
+   "fr": "Mephisto",
+   "doc": "Le roman « Mephisto » de Klaus Mann (Amsterdam, 1936) décrit un acteur opportuniste sous le nazisme, inspiré de Gustaf Gründgens. Après la mort de Gründgens (1963), son fils adoptif obtient l'interdiction du roman en RFA ; le BGH confirme en 1968. L'éditeur forme un recours constitutionnel en invoquant la liberté de l'art (Kunstfreiheit, art. 5 al. 3 GG), qui n'est assortie d'aucune réserve de loi.",
+   "questions": [
+    "Un mort peut-il encore être protégé ? Sur l'art. 1 al. 1 (dignité) ou l'art. 2 al. 1 GG (libre épanouissement) ? Un mort peut-il encore « s'épanouir » ?",
+    "Une liberté sans réserve de loi est-elle illimitée ?",
+    "Trois juges sur six donnent raison à l'éditeur : pourquoi le recours est-il pourtant rejeté (§ 15 BVerfGG : en cas d'égalité, la violation ne peut être constatée) ? Question de groupe : que nous apprend une protection qui survit à la personne sur le titulaire du droit ?"
+   ],
+   "choix": {
+    "enonce": "La dignité survit à la personne : c'est la protection « ______ » de la personnalité. En allemand :",
+    "options": [
+     "Unternehmenspersönlichkeitsrecht",
+     "postmortaler Persönlichkeitsschutz",
+     "Resozialisierung"
+    ]
+   },
+   "extrait": "« Dementsprechend endet die in Art. 1 Abs. 1 GG aller staatlichen Gewalt auferlegte Verpflichtung, dem Einzelnen Schutz gegen Angriffe auf seine Menschenwürde zu gewähren, nicht mit dem Tode. » (BVerfGE 30, 173, p. 194)\n**Traduction :** « En conséquence, l'obligation que l'art. 1 al. 1 GG impose à tous les pouvoirs publics de protéger l'individu contre les atteintes à sa dignité **ne s'éteint pas avec la mort**. »",
+   "liens": [
+    {
+     "label": "BVerfGE 30, 173 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv030173.html"
+    },
+    {
+     "label": "Art. 5 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+    }
+   ],
+   "fr_trad": "roman de Klaus Mann"
+  },
+  {
+   "id": 10,
+   "r": 4,
+   "c": 0,
+   "eleve": "Leïla Cottin",
+   "groupe": "La vie privée du détenu",
+   "seance": 1,
+   "ordre": 10,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1972",
+   "ref": "BVerfG, 14 mars 1972, 2 BvR 41/71, BVerfGE 33, 1 (Strafgefangene, « détenus »)",
+   "fr": "Strafgefangene",
+   "doc": "Un détenu écrit une lettre contenant des propos injurieux envers le directeur de la prison. La lettre est retenue sur le fondement d'un simple règlement pénitentiaire, sans loi. La doctrine traditionnelle admettait que, dans certains « rapports spéciaux de puissance » (besonderes Gewaltverhältnis : détenu, fonctionnaire, soldat, élève), les droits fondamentaux pouvaient être restreints sans loi.",
+   "questions": [
+    "Quel droit fondamental est en cause (art. 10 GG : secret de la correspondance, des postes et des télécommunications) ?",
+    "Le BVerfG maintient-il la théorie des rapports spéciaux de puissance ? Que faut-il désormais pour restreindre un droit fondamental du détenu ?",
+    "Quelle loi en résulte en Allemagne ? Comparez avec la France (loi pénitentiaire du 24 novembre 2009)."
+   ],
+   "choix": {
+    "enonce": "Un droit fondamental ne peut être restreint que par une loi ou sur le fondement d'une loi : c'est la « ______ de loi ». En allemand :",
+    "options": [
+     "Klärungsverfahren",
+     "Abwägungskriterien",
+     "Gesetzesvorbehalt"
+    ]
+   },
+   "extrait": "« Auch die Grundrechte von Strafgefangenen können nur durch Gesetz oder aufgrund eines Gesetzes eingeschränkt werden. » (BVerfGE 33, 1, principe 1)\n**Traduction :** « Les droits fondamentaux des détenus, eux aussi, ne peuvent être restreints que **par la loi ou sur le fondement d'une loi**. »",
+   "liens": [
+    {
+     "label": "BVerfGE 33, 1 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv033001.html"
+    },
+    {
+     "label": "Art. 10 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_10.html"
+    }
+   ],
+   "fr_trad": "détenus"
+  },
+  {
+   "id": 11,
+   "r": 1,
+   "c": 0,
+   "eleve": "Maylis Loustale",
+   "groupe": "Sans groupe dans le mail",
+   "seance": 1,
+   "ordre": 11,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1973",
+   "ref": "BVerfG, 14 février 1973, 1 BvR 112/65, BVerfGE 34, 269 (Soraya)",
+   "fr": "Soraya",
+   "doc": "Un magazine publie une fausse interview exclusive de la princesse Soraya, ex-épouse du Shah d'Iran, sur sa vie privée. Le BGH condamne l'éditeur à une indemnité pour préjudice moral (pièce 6), alors que le § 253 BGB limite cette indemnité aux « cas prévus par la loi ». L'éditeur saisit le BVerfG : selon lui, le juge s'est fait législateur. Repère : art. 20 al. 3 GG, le juge est lié « par la loi et le droit » (an Gesetz und Recht).",
+   "questions": [
+    "Quel principe constitutionnel l'éditeur invoque-t-il ?",
+    "Que signifie que le juge est lié par « la loi **et** le droit » ? Le droit se réduit-il aux lois écrites ?",
+    "Le BVerfG valide-t-il la création du BGH ? Qu'en déduisez-vous du rapport entre les deux cours ?"
+   ],
+   "choix": {
+    "enonce": "Le juge peut combler une lacune par une « ______ prétorienne du droit » (littéralement « formation continue du droit par le juge »). En allemand :",
+    "options": [
+     "richterliche Rechtsfortbildung",
+     "mittelbare Drittwirkung",
+     "Je-desto-Formel"
+    ]
+   },
+   "extrait": "« […] daß die Rechtsprechung an \"Gesetz und Recht\" gebunden ist (Art. 20 Abs. 3). […] Diese Aufgabe und Befugnis zu \"schöpferischer Rechtsfindung\" ist dem Richter […] » (BVerfGE 34, 269, p. 286 et 287 (extraits))\n**Traduction :** « […] que le juge est lié par « la loi et le droit » (art. 20 al. 3). […] Cette mission et ce pouvoir de « **création** du droit » reviennent au juge […] »",
+   "liens": [
+    {
+     "label": "BVerfGE 34, 269 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv034269.html"
+    },
+    {
+     "label": "Art. 20 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_20.html"
+    }
+   ],
+   "fr_trad": "interview inventée de la princesse Soraya"
+  },
+  {
+   "id": 12,
+   "r": 1,
+   "c": 1,
+   "eleve": "Yasmine Rami",
+   "groupe": "La vie privée du détenu",
+   "seance": 1,
+   "ordre": 12,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1973",
+   "ref": "BVerfG, 5 juin 1973, 1 BvR 536/72, BVerfGE 35, 202 (Lebach)",
+   "fr": "Lebach",
+   "doc": "En 1969, quatre soldats sont tués lors de l'attaque d'un dépôt de munitions de la Bundeswehr à Lebach (Sarre). Peu avant la libération d'un complice, condamné pour aide, la chaîne publique ZDF prépare un documentaire-fiction (Dokumentarspiel) qui le nomme et le montre. Il demande l'interdiction de la diffusion. Repère : art. 5 al. 1 phrase 2 GG (liberté de radiodiffusion, Rundfunkfreiheit).",
+   "questions": [
+    "Quels intérêts s'opposent ?",
+    "Le temps écoulé joue-t-il ? Distinguez l'information au moment des faits et une émission diffusée des années plus tard.",
+    "Que risque le complice si l'émission est diffusée au moment de sa sortie de prison ? Question de groupe : quel objectif de la peine est menacé ?"
+   ],
+   "choix": {
+    "enonce": "L'émission compromettrait la « ______ » du condamné. En allemand :",
+    "options": [
+     "Anonymisierung",
+     "Innenraum",
+     "Resozialisierung"
+    ]
+   },
+   "extrait": "« Eine spätere Berichterstattung ist jedenfalls unzulässig, wenn sie geeignet ist, […] insbesondere seine Wiedereingliederung in die Gesellschaft (**Resozialisierung**) zu gefährden. » (BVerfGE 35, 202, principe 3)\n**Traduction :** « Une couverture médiatique ultérieure est en tout cas illicite lorsqu'elle est de nature à compromettre […] notamment sa **réinsertion** dans la société. »",
+   "liens": [
+    {
+     "label": "BVerfGE 35, 202 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv035202.html"
+    }
+   ],
+   "fr_trad": "téléfilm sur le meurtre de Lebach"
+  },
+  {
+   "id": 13,
+   "r": 0,
+   "c": 5,
+   "eleve": "Lola-Vera Sutton",
+   "groupe": "La vie privée des personnes publiques et des élus",
+   "seance": 1,
+   "ordre": 13,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1980",
+   "ref": "BVerfG, 3 juin 1980, 1 BvR 185/77, BVerfGE 54, 148 (Eppler)",
+   "fr": "Eppler",
+   "doc": "Lors d'une campagne électorale, la CDU du Bade-Wurtemberg attribue à Erhard Eppler, dirigeant du SPD, une phrase selon laquelle il voudrait « tester la capacité de charge de l'économie ». Eppler conteste l'avoir dite en ce sens et demande au juge civil d'interdire cette attribution. L'OLG de Stuttgart rejette sa demande, faute pour lui d'avoir prouvé que la phrase était fausse. Il saisit le BVerfG.",
+   "questions": [
+    "Le droit général de la personnalité n'est écrit nulle part dans le GG. Le BVerfG le qualifie de liberté « innommée » : de quels articles le déduit-il ?",
+    "Quel aspect de la personnalité est en cause quand on vous prête des propos ? Qui doit décider de l'image que vous donnez de vous-même ?",
+    "Le recours est rejeté : pour quelle raison (pensez à la charge de la preuve, qui relève du droit ordinaire) ? Question de groupe : l'élu est-il moins protégé ?"
+   ],
+   "choix": {
+    "enonce": "Chacun a le droit de décider de sa propre « ______ » face aux autres. En allemand :",
+    "options": [
+     "Sphärentheorie",
+     "Selbstdarstellung",
+     "Recht am eigenen Bild"
+    ]
+   },
+   "extrait": "« […] grundsätzlich selbst entscheiden können, wie er sich Dritten oder der Öffentlichkeit gegenüber darstellen will […] » (BVerfGE 54, 148, p. 155)\n**Traduction :** « […] pouvoir décider lui-même, en principe, de la manière dont il veut **se présenter** aux tiers ou au public […] »",
+   "liens": [
+    {
+     "label": "BVerfGE 54, 148 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv054148.html"
+    }
+   ],
+   "fr_trad": "propos prêtés à E. Eppler"
+  },
+  {
+   "id": 14,
+   "r": 0,
+   "c": 7,
+   "eleve": "Arthur Lorenzi",
+   "groupe": "La protection des données personnelles",
+   "seance": 1,
+   "ordre": 14,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1983",
+   "ref": "BVerfG, 15 décembre 1983, 1 BvR 209/83 e. a., BVerfGE 65, 1 (Volkszählung, « recensement »)",
+   "fr": "Volkszählung",
+   "doc": "La loi sur le recensement de 1983 prévoit un questionnaire détaillé et la transmission de certaines données aux administrations communales. Une vague de protestations entraîne de nombreux recours constitutionnels.",
+   "questions": [
+    "Le BVerfG affirme qu'avec le traitement automatisé, « il n'existe plus de donnée sans intérêt ». Pourquoi ?",
+    "Celui qui ne sait pas qui sait quoi sur lui peut-il encore exercer librement ses libertés ? Qui doit donc décider de l'usage de ses données ?",
+    "Quels principes du RGPD retrouvez-vous déjà en 1983 ?"
+   ],
+   "choix": {
+    "enonce": "Chacun a le droit de « ______ lui-même » de la communication et de l'usage de ses données : c'est l'« autodétermination ______ ». En allemand :",
+    "options": [
+     "informationelle Selbstbestimmung",
+     "IT-Grundrecht",
+     "Fernmeldegeheimnis"
+    ]
+   },
+   "extrait": "« Einschränkungen dieses Rechts auf \"**informationelle Selbstbestimmung**\" sind nur im überwiegenden Allgemeininteresse zulässig. » (BVerfGE 65, 1, principe 2)\n**Traduction :** « Les restrictions de ce droit à l'« **autodétermination informationnelle** » ne sont admises que dans un intérêt général prépondérant. »",
+   "liens": [
+    {
+     "label": "BVerfGE 65, 1 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv065001.html"
+    }
+   ],
+   "fr_trad": "recensement"
+  },
+  {
+   "id": 15,
+   "r": 0,
+   "c": 6,
+   "eleve": "Maëva Bernard",
+   "groupe": "La vie privée du détenu",
+   "seance": 1,
+   "ordre": 15,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1989",
+   "ref": "BVerfG, 14 septembre 1989, 2 BvR 1062/87, BVerfGE 80, 367 (Tagebuch, « journal intime »)",
+   "fr": "Tagebuch",
+   "doc": "Dans un procès pour meurtre, les juges utilisent des notes de type journal intime de l'accusé, où il décrit ses pulsions et ses relations avec les femmes. Il invoque son droit de la personnalité. La jurisprudence distingue trois cercles : la sphère intime (Intimsphäre), la sphère privée (Privatsphäre) et la sphère sociale (Sozialsphäre).",
+   "questions": [
+    "Pour chacune des trois sphères, la protection est-elle absolue ou soumise à une pesée ?",
+    "Des notes intimes qui concernent la commission de crimes graves restent-elles purement intimes ?",
+    "Le deuxième Sénat se partage 4 contre 4 : quel est le résultat (pensez à la pièce 9) ? Question de groupe : où passe la frontière entre l'intime et l'intérêt de la poursuite pénale ?"
+   ],
+   "choix": {
+    "enonce": "La protection graduée selon trois cercles s'appelle la « théorie des ______ ». En allemand :",
+    "options": [
+     "abgestuftes Schutzkonzept",
+     "Sphärentheorie",
+     "Konvergenz"
+    ]
+   },
+   "extrait": "« Das Bundesverfassungsgericht erkennt jedoch einen letzten unantastbaren Bereich privater Lebensgestaltung an […] » (BVerfGE 80, 367, p. 373)\n**Traduction :** « La Cour constitutionnelle fédérale reconnaît toutefois un dernier domaine intangible de la vie privée […] (sommet de la **théorie des sphères**). »",
+   "liens": [
+    {
+     "label": "BVerfGE 80, 367 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv080367.html"
+    }
+   ],
+   "fr_trad": "journal intime"
+  },
+  {
+   "id": 16,
+   "r": 4,
+   "c": 1,
+   "eleve": "Jean-Marie Mukendi Ngoyi",
+   "groupe": "Vie privée et vie familiale",
+   "seance": 1,
+   "ordre": 16,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1989",
+   "ref": "BVerfG, 31 janvier 1989, 1 BvL 17/87, BVerfGE 79, 256 (Kenntnis der eigenen Abstammung, « connaissance de ses origines »)",
+   "fr": "Kenntnis der eigenen Abstammung",
+   "doc": "Un enfant devenu majeur veut contester la paternité de son père juridique pour faire établir sa filiation biologique. Le BGB de l'époque ne lui ouvre cette action que dans des cas très limités. Un tribunal saisit le BVerfG.",
+   "questions": [
+    "Savoir de qui l'on descend est-il important pour construire son identité ?",
+    "Ce droit oblige-t-il l'État à rechercher les informations à tout prix, ou seulement à ne pas empêcher l'accès aux informations disponibles ? Contre quels intérêts doit-il être pesé ?",
+    "Comparez avec la France : accouchement sous X, CEDH, Odièvre c. France, 13 février 2003."
+   ],
+   "choix": {
+    "enonce": "Le droit de la personnalité comprend le droit à la « ______ de ses propres origines ». En allemand :",
+    "options": [
+     "Kenntnis der eigenen Abstammung",
+     "geschlechtliche Identität",
+     "Klärungsverfahren"
+    ]
+   },
+   "extrait": "« Daher umfaßt das Persönlichkeitsrecht auch die **Kenntnis der eigenen Abstammung**. » (BVerfGE 79, 256, p. 269)\n**Traduction :** « C'est pourquoi le droit de la personnalité comprend aussi la **connaissance de ses propres origines**. »",
+   "liens": [
+    {
+     "label": "BVerfGE 79, 256 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv079256.html"
+    }
+   ],
+   "fr_trad": "connaissance de ses propres origines"
+  },
+  {
+   "id": 17,
+   "r": 2,
+   "c": 5,
+   "eleve": "Marion Drouard",
+   "groupe": "La vie privée de la victime",
+   "seance": 1,
+   "ordre": 17,
+   "cour": "BGH",
+   "badge": "BGH 1994",
+   "ref": "BGH, 15 novembre 1994, VI ZR 56/94, BGHZ 128, 1 (Caroline, interview inventée)",
+   "fr": "Caroline (interview inventée)",
+   "doc": "Un magazine publie une interview exclusive, entièrement inventée, de Caroline de Monaco. Les juges du fond accordent une indemnité modeste. Le magazine a vendu beaucoup plus d'exemplaires grâce à cette couverture.",
+   "questions": [
+    "L'indemnité doit-elle seulement donner satisfaction à la victime, ou aussi viser l'avenir ?",
+    "Si un éditeur calcule qu'une atteinte reste rentable malgré l'indemnité, la protection est-elle efficace ? Que doit donc prendre en compte le montant ?",
+    "Question de groupe : la personne visée par la presse est-elle une victime ? Comparez avec le refus des dommages-intérêts punitifs en droit français."
+   ],
+   "choix": {
+    "enonce": "L'indemnité doit dissuader l'éditeur de recommencer : elle a une fonction de « ______ ». En allemand :",
+    "options": [
+     "Gegendarstellung",
+     "Schmerzensgeld",
+     "Prävention"
+    ]
+   },
+   "extrait": "« Zwar trifft es zu, dass der Geldentschädigungsanspruch auch der **Prävention** dient […] » (BGH, 29 avril 2014, VI ZR 246/12, qui renvoie à la jurisprudence ouverte par BGHZ 128, 1 (le texte de 1994 n'est pas librement accessible en ligne))\n**Traduction :** « Il est certes exact que le droit à réparation en argent sert aussi la **prévention** […] »",
+   "liens": [
+    {
+     "label": "BGH VI ZR 246/12 (Open Legal Data)",
+     "url": "https://de.openlegaldata.io/case/bgh-2014-04-29-vi-zr-24612"
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "r": 2,
+   "c": 6,
+   "eleve": "Alexandre Destrait",
+   "groupe": "La surveillance de l'espace public",
+   "seance": 1,
+   "ordre": 18,
+   "cour": "BGH",
+   "badge": "BGH 1995",
+   "ref": "BGH, 19 décembre 1995, VI ZR 15/95, BGHZ 131, 332 (Caroline, jardin d'un restaurant)",
+   "fr": "Caroline (jardin du restaurant)",
+   "doc": "Caroline de Monaco est photographiée au téléobjectif avec un acteur, au fond du jardin d'un restaurant de Saint-Rémy-de-Provence ; d'autres photos la montrent au marché, à cheval, à vélo. À l'époque, elle est considérée comme une « personne absolue de l'histoire contemporaine » (absolute Person der Zeitgeschichte), dont l'image peut en principe être diffusée sans consentement (§ 23 KUG, pièce 1).",
+   "questions": [
+    "Une figure publique doit-elle tout tolérer dès qu'elle sort de chez elle ?",
+    "Qu'est-ce qui distingue le fond du jardin du marché ? La personne s'y croit-elle observée ?",
+    "Question de groupe : la vie privée s'arrête-t-elle à la porte du domicile ?"
+   ],
+   "choix": {
+    "enonce": "La vie privée protège aussi les lieux « ______ » où l'on se retire du public : c'est l'« isolement local ». En allemand :",
+    "options": [
+     "Innenraum",
+     "örtliche Abgeschiedenheit",
+     "Eingriff ohne Treffer"
+    ]
+   },
+   "extrait": "« […] wenn sich jemand in eine **örtliche Abgeschiedenheit** zurückgezogen habe, in der er objektiv erkennbar allein sein wolle […] » (BVerfGE 101, 361, p. 367, résumant l'arrêt du BGH de 1995 (le texte du BGH n'est pas librement accessible en ligne))\n**Traduction :** « […] lorsque quelqu'un s'est retiré dans un **lieu à l'écart** où il veut, de façon objectivement reconnaissable, être seul […] »",
+   "liens": [
+    {
+     "label": "BVerfGE 101, 361 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv101361.html"
+    },
+    {
+     "label": "§ 23 KUG",
+     "url": "https://www.gesetze-im-internet.de/kunsturhg/__23.html"
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "r": 1,
+   "c": 2,
+   "eleve": "Olivia Mateu",
+   "groupe": "La vie privée des personnes publiques et des élus",
+   "seance": 1,
+   "ordre": 19,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1998",
+   "ref": "BVerfG, 14 janvier 1998, 1 BvR 1861/93 e. a., BVerfGE 97, 125 (Caroline I)",
+   "fr": "Caroline I",
+   "doc": "Après la publication de l'interview inventée (pièce 17), les juges civils imposent à l'éditeur, Heinrich Bauer Verlag, de publier en couverture la version de Caroline de Monaco (et, dans une autre affaire jointe, celle de la nageuse Franziska van Almsick). L'éditeur invoque la liberté de la presse (Pressefreiheit, art. 5 al. 1 phrase 2 GG) : la couverture serait son espace de vente.",
+   "questions": [
+    "Le droit de réponse porte-t-il sur des faits ou sur des opinions ?",
+    "L'atteinte à la presse est-elle plus forte en couverture qu'en pages intérieures ? Est-elle pour autant interdite, alors que l'allégation fausse figurait elle-même en couverture ?",
+    "Comparez avec le droit de réponse de l'art. 13 de la loi du 29 juillet 1881."
+   ],
+   "choix": {
+    "enonce": "Le droit de la personne visée de faire publier sa version des faits s'appelle, en français, le « droit de ______ ». En allemand :",
+    "options": [
+     "Selbstdarstellung",
+     "Recht auf Löschung",
+     "Gegendarstellung"
+    ]
+   },
+   "extrait": "« [Art. 5 Abs. 1 Satz 2 GG] verlangt nicht, daß die Titelseite von Presseerzeugnissen von **Gegendarstellungen** oder Richtigstellungen freigehalten wird […] » (BVerfGE 97, 125, principe 1)\n**Traduction :** « [L'art. 5 al. 1 phr. 2 GG] n'exige pas que la couverture des publications de presse soit tenue à l'écart des **réponses** ou rectifications. »",
+   "liens": [
+    {
+     "label": "BVerfGE 97, 125 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv097125.html"
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "r": 1,
+   "c": 3,
+   "eleve": "Laura Vidal Ricart",
+   "groupe": "Le droit à l'image",
+   "seance": 1,
+   "ordre": 20,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1999",
+   "ref": "BVerfG, 15 décembre 1999, 1 BvR 653/96, BVerfGE 101, 361 (Caroline II)",
+   "fr": "Caroline II",
+   "doc": "Après l'arrêt du BGH de 1995 (pièce 18), Caroline de Monaco saisit le BVerfG contre les photos jugées licites (au marché, à cheval, avec ses enfants). Elle soutient que la presse de divertissement (Unterhaltungspresse) ne mérite aucune protection.",
+   "questions": [
+    "La presse de divertissement participe-t-elle à la formation de l'opinion ?",
+    "Le BVerfG remet-il en cause la catégorie de figure publique dont l'image peut en principe être diffusée ? Comment s'appelle-t-elle (pièce 18) ?",
+    "Quelles photos posent problème, et pourquoi (art. 6 GG, protection de la famille et des enfants) ?"
+   ],
+   "choix": {
+    "enonce": "Le BVerfG confirme la catégorie de « personne ______ de l'histoire contemporaine ». En allemand :",
+    "options": [
+     "absolute Person der Zeitgeschichte",
+     "Debatte von allgemeinem Interesse",
+     "Sphärentheorie"
+    ]
+   },
+   "extrait": "« […] eine **absolute Person der Zeitgeschichte** als solche im Bild vorgestellt zu bekommen […] » (BVerfGE 101, 361, p. 370)\n**Traduction :** « […] se voir présenter en image une **personne « absolue » de l'histoire contemporaine** en tant que telle […] (intérêt du public reconnu par la Cour). »",
+   "liens": [
+    {
+     "label": "BVerfGE 101, 361 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv101361.html"
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "r": 1,
+   "c": 6,
+   "eleve": "Camille Cyprès",
+   "groupe": "Le droit à l'oubli",
+   "seance": 2,
+   "ordre": 1,
+   "cour": "BVerfG",
+   "badge": "BVerfG 1999",
+   "ref": "BVerfG (chambre), 25 novembre 1999, 1 BvR 348/98 e. a., NJW 2000, 1859 (Lebach II)",
+   "fr": "Lebach II",
+   "doc": "Une chaîne privée (SAT.1) prépare une série sur des affaires criminelles célèbres, dont celle de Lebach (pièce 12), mais sans les noms ni les images des auteurs. L'un d'eux demande l'interdiction.",
+   "questions": [
+    "Un condamné a-t-il le droit de ne plus jamais être confronté publiquement à son crime ?",
+    "Qu'est-ce qui distingue cette émission de celle de 1973 ? Les auteurs sont-ils reconnaissables ?",
+    "Question de groupe : quelle définition du droit à l'oubli tirez-vous de Lebach I et II ?"
+   ],
+   "choix": {
+    "enonce": "La série est licite parce qu'elle ne permet pas d'identifier les auteurs : c'est l'« ______ ». En allemand :",
+    "options": [
+     "Resozialisierung",
+     "Recht auf Löschung",
+     "Anonymisierung"
+    ]
+   },
+   "extrait": "« Auch die Verbüßung der Strafhaft führt nicht dazu, dass der Täter […] den Anspruch erwirbt, mit der Tat \"allein gelassen zu werden\". » (BVerfG, 25 novembre 1999, 1 BvR 348/98, n° 36)\n**Traduction :** « Même l'exécution de la peine ne fait pas acquérir à l'auteur le droit d'être « laissé seul » avec son acte. »",
+   "liens": [
+    {
+     "label": "BVerfG 1 BvR 348/98",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/1999/11/rk19991125_1bvr034898.html"
+    }
+   ],
+   "fr_trad": "second téléfilm sur Lebach"
+  },
+  {
+   "id": 22,
+   "r": 3,
+   "c": 0,
+   "eleve": "Nina Adrot",
+   "groupe": "La surveillance de l'espace public",
+   "seance": 2,
+   "ordre": 2,
+   "cour": "Europe",
+   "badge": "CEDH 2004",
+   "ref": "CEDH, 24 juin 2004, von Hannover c. Allemagne (n° 1), req. n° 59320/00",
+   "fr": "von Hannover n° 1",
+   "doc": "Après Caroline II (pièce 20), Caroline de Hanovre (même personne, mariée au prince Ernst August de Hanovre) saisit la Cour européenne des droits de l'homme contre l'Allemagne. Elle n'exerce aucune fonction officielle ; les photos la montrent dans sa vie quotidienne.",
+   "questions": [
+    "Quel article de la Convention est invoqué ? Pourquoi un litige entre elle et des éditeurs engage-t-il l'État (pensez aux obligations positives) ?",
+    "Des photos de courses au marché contribuent-elles à une discussion d'intérêt public ? Quel critère la Cour oppose-t-elle à la catégorie de « personne absolue » ?",
+    "Question de groupe : la Cour se contente-t-elle du critère de l'isolement local (pièce 18) ?"
+   ],
+   "choix": {
+    "enonce": "Une photo n'est justifiée que si elle contribue à un « débat d'______ ______ ». En allemand :",
+    "options": [
+     "absolute Person der Zeitgeschichte",
+     "Debatte von allgemeinem Interesse",
+     "spezifisches Verfassungsrecht"
+    ]
+   },
+   "extrait": "« […] it has always stressed the contribution made by photos or articles in the press to a debate of general interest […] » (CEDH, von Hannover c. Allemagne, 24 juin 2004, § 60 (version anglaise ; pas de version allemande officielle))\n**Traduction :** « […] elle a toujours souligné la contribution des photos ou articles de presse à un **débat d'intérêt général** […] (en allemand : « Debatte von allgemeinem Interesse »). »",
+   "liens": [
+    {
+     "label": "Arrêt (servat, version anglaise)",
+     "url": "https://www.servat.unibe.ch/dfr/em593200.html"
+    },
+    {
+     "label": "HUDOC 001-61853",
+     "url": "https://hudoc.echr.coe.int/eng?i=001-61853"
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "r": 3,
+   "c": 1,
+   "eleve": "Pauline Guillier de Chalvron",
+   "groupe": "La vie privée du dirigeant",
+   "seance": 2,
+   "ordre": 3,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2004",
+   "ref": "BVerfG, 14 octobre 2004, 2 BvR 1481/04, BVerfGE 111, 307 (Görgülü)",
+   "fr": "Görgülü",
+   "doc": "Un père, ressortissant turc, se voit refuser la garde et le droit de visite de son enfant né hors mariage, confié à une famille d'accueil. La CEDH a constaté une violation de l'art. 8. L'OLG de Naumburg refuse d'en tenir compte. Repère : art. 59 al. 2 GG (les traités ratifiés ont le rang de la loi qui les approuve).",
+   "questions": [
+    "Quel est le rang de la Convention européenne des droits de l'homme en droit allemand ?",
+    "Les juges allemands sont-ils strictement liés par les arrêts de Strasbourg, libres de les ignorer, ou entre les deux ? Que doivent-ils faire ?",
+    "Pourquoi cette décision, rendue la même année que von Hannover n° 1, est-elle essentielle pour notre puzzle ?"
+   ],
+   "choix": {
+    "enonce": "Les juges ont une « obligation de ______ en compte » les arrêts de la CEDH. En allemand :",
+    "options": [
+     "Berücksichtigungspflicht",
+     "Gesetzesvorbehalt",
+     "Verwertungsverbot"
+    ]
+   },
+   "extrait": "« […] gehört die Berücksichtigung der Gewährleistungen der Konvention zum Schutze der Menschenrechte […] » (BVerfGE 111, 307, principe 1 (extrait))\n**Traduction :** « […] la **prise en compte** des garanties de la Convention de sauvegarde des droits de l'homme fait partie [du lien du juge à la loi et au droit] […] »",
+   "liens": [
+    {
+     "label": "BVerfGE 111, 307 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv111307.html"
+    }
+   ],
+   "fr_trad": "droit de visite d'un père, M. Görgülü"
+  },
+  {
+   "id": 24,
+   "r": 2,
+   "c": 7,
+   "eleve": "Lauraline Royer",
+   "groupe": "Le droit à l'image",
+   "seance": 2,
+   "ordre": 4,
+   "cour": "BGH",
+   "badge": "BGH 2007",
+   "ref": "BGH, 6 mars 2007, VI ZR 51/06, BGHZ 171, 275 (abgestuftes Schutzkonzept)",
+   "fr": "abgestuftes Schutzkonzept",
+   "doc": "Nouvelles photos de Caroline et de son mari en vacances aux sports d'hiver. L'une accompagne un article sur la maladie de son père, le prince Rainier, souverain régnant de Monaco. Le BGH doit appliquer les §§ 22 et 23 KUG (pièce 1) après la condamnation de Strasbourg (pièce 22).",
+   "questions": [
+    "Le BGH conserve-t-il la catégorie de « personne absolue de l'histoire contemporaine » ?",
+    "Reconstituez l'examen en trois étapes : consentement (§ 22) ? sinon, image d'histoire contemporaine, appréciée selon l'intérêt d'information du public (§ 23 al. 1 n° 1) ? enfin, intérêt légitime contraire de la personne (§ 23 al. 2) ?",
+    "Pourquoi la photo liée à la maladie du prince est-elle admise, et les simples photos de vacances non ?"
+   ],
+   "choix": {
+    "enonce": "L'examen en paliers successifs forme un « concept de protection ______ ». En allemand :",
+    "options": [
+     "Sphärentheorie",
+     "abgestuftes Schutzkonzept",
+     "Abwägungskriterien"
+    ]
+   },
+   "extrait": "« Das Berufungsgericht ist zutreffend davon ausgegangen, dass die Zulässigkeit von Bildveröffentlichungen nach der gefestigten Rechtsprechung des erkennenden Senats nach dem **abgestuften Schutzkonzept** der §§ 22, 23 KUG zu beurteilen ist […] » (BGH, 11 novembre 2014, VI ZR 9/14, n° 5, renvoyant à BGHZ 171, 275 (VI ZR 51/06))\n**Traduction :** « La cour d'appel a admis à juste titre que la licéité de la publication d'images s'apprécie, selon la jurisprudence constante de la chambre, d'après le **concept de protection gradué** des §§ 22 et 23 KUG […] »",
+   "liens": [
+    {
+     "label": "BGH VI ZR 9/14 (Open Legal Data)",
+     "url": "https://de.openlegaldata.io/case/bgh-2014-11-11-vi-zr-914"
+    },
+    {
+     "label": "BVerfGE 120, 180 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv120180.html"
+    }
+   ],
+   "fr_trad": "concept de protection graduée"
+  },
+  {
+   "id": 25,
+   "r": 4,
+   "c": 2,
+   "eleve": "Kenza Gamine",
+   "groupe": "Vie privée et vie familiale",
+   "seance": 2,
+   "ordre": 5,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2007",
+   "ref": "BVerfG, 13 février 2007, 1 BvR 421/05, BVerfGE 117, 202 (heimlicher Vaterschaftstest, « test de paternité secret »)",
+   "fr": "test de paternité secret",
+   "doc": "Un père fait analyser en secret l'ADN de l'enfant ; le test exclut sa paternité. Les tribunaux refusent d'utiliser ce test comme preuve dans l'action en contestation de paternité, et aucune autre voie ne lui permet de savoir sans détruire le lien juridique.",
+   "questions": [
+    "Quel droit de l'enfant est en cause (pensez à la pièce 14) ?",
+    "Le père a-t-il, lui aussi, un intérêt protégé par le droit de la personnalité ?",
+    "Le BVerfG se contente-t-il de rejeter le recours, ou demande-t-il au législateur de créer une procédure pour que le père puisse savoir, sans forcément contester la paternité ? Comparez avec l'art. 16-11 C. civ. et l'art. 226-28 C. pén."
+   ],
+   "choix": {
+    "enonce": "Le législateur doit créer une « procédure de ______ » de la filiation. En allemand :",
+    "options": [
+     "Klärungsverfahren",
+     "Kenntnis der eigenen Abstammung",
+     "Gegendarstellung"
+    ]
+   },
+   "extrait": "« Solange der Gesetzgeber kein Verfahren für die Klärung der Abstammung eröffnet hat […] » (BVerfGE 117, 202, p. 232)\n**Traduction :** « Tant que le législateur n'a pas ouvert de **procédure de clarification** de la filiation […] »",
+   "liens": [
+    {
+     "label": "BVerfGE 117, 202 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv117202.html"
+    },
+    {
+     "label": "§ 1598a BGB",
+     "url": "https://www.gesetze-im-internet.de/bgb/__1598a.html"
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "r": 1,
+   "c": 5,
+   "eleve": "Sheyma Abassi",
+   "groupe": "La vie privée de la victime",
+   "seance": 2,
+   "ordre": 6,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2007",
+   "ref": "BVerfG, 13 juin 2007, 1 BvR 1783/05, BVerfGE 119, 1 (Esra)",
+   "fr": "Esra",
+   "doc": "Le roman « Esra » de Maxim Biller raconte la liaison du narrateur avec une actrice, en détaillant sa vie sexuelle et la maladie grave de sa fille. L'ex-compagne de l'auteur se reconnaît et obtient l'interdiction du roman. L'éditeur invoque la liberté de l'art (art. 5 al. 3 GG) et la nature fictionnelle du livre.",
+   "questions": [
+    "Faut-il que le grand public reconnaisse la personne, ou suffit-il que son entourage la reconnaisse ?",
+    "Plus la copie (Abbild) ressemble au modèle réel (Urbild), et plus elle touche l'intimité, plus l'auteur doit-il s'éloigner de la réalité ?",
+    "Question de groupe : en quoi la personne représentée est-elle victime ? Comparez avec Mephisto (pièce 9)."
+   ],
+   "choix": {
+    "enonce": "La règle de la question 2 est une « formule plus… ______ » (littéralement « d'autant plus… d'autant plus »). En allemand :",
+    "options": [
+     "Sphärentheorie",
+     "Schmähkritik",
+     "Je-desto-Formel"
+    ]
+   },
+   "extrait": "« **Je stärker** Abbild und Urbild übereinstimmen, **desto** schwerer wiegt die Beeinträchtigung des Persönlichkeitsrechts. » (BVerfGE 119, 1, principe 4)\n**Traduction :** « **Plus** la copie et le modèle se ressemblent, **plus** l'atteinte au droit de la personnalité est grave. »",
+   "liens": [
+    {
+     "label": "BVerfGE 119, 1 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv119001.html"
+    },
+    {
+     "label": "Art. 5 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_5.html"
+    }
+   ],
+   "fr_trad": "roman de Maxim Biller"
+  },
+  {
+   "id": 27,
+   "r": 1,
+   "c": 4,
+   "eleve": "Héloïse Houyvet",
+   "groupe": "La surveillance de l'espace public",
+   "seance": 2,
+   "ordre": 7,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2008",
+   "ref": "BVerfG, 26 février 2008, 1 BvR 1602/07 e. a., BVerfGE 120, 180 (Caroline III)",
+   "fr": "Caroline III",
+   "doc": "Les éditeurs comme Caroline contestent devant le BVerfG l'arrêt du BGH de 2007 (pièce 24), qui a abandonné la catégorie de « personne absolue » pour suivre Strasbourg.",
+   "questions": [
+    "Le GG imposait-il cette catégorie, ou n'était-ce qu'une construction du droit ordinaire que le juge civil peut abandonner ?",
+    "Le BVerfG approuve-t-il le nouveau concept du BGH ? Prend-il en compte la jurisprudence de la CEDH (pièce 23) ?",
+    "Question de groupe : la photo d'une personne publique dans la rue est-elle désormais illicite ? Les trois juges (BGH, BVerfG, CEDH) s'éloignent-ils ou se rapprochent-ils ?"
+   ],
+   "choix": {
+    "enonce": "Les trois juridictions finissent par « ______ » vers la même solution. En allemand :",
+    "options": [
+     "Berücksichtigungspflicht",
+     "Konvergenz",
+     "mittelbare Drittwirkung"
+    ]
+   },
+   "extrait": "« […] einen Bezug zu einer Sachdebatte von allgemeinem Interesse aufweist […] » (BVerfGE 120, 180, p. 208 : le BVerfG reprend le critère de Strasbourg)\n**Traduction :** « […] présente un lien avec un débat de fond d'intérêt général […] (le critère européen devient celui de Karlsruhe : **convergence**). »",
+   "liens": [
+    {
+     "label": "BVerfGE 120, 180 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv120180.html"
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "r": 4,
+   "c": 3,
+   "eleve": "Maëlys Amil",
+   "groupe": "Vie privée et liberté sexuelle",
+   "seance": 2,
+   "ordre": 8,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2008",
+   "ref": "BVerfG, 26 février 2008, 2 BvR 392/07, BVerfGE 120, 224 (Geschwisterinzest, « inceste entre frère et sœur »)",
+   "fr": "inceste entre frère et sœur",
+   "doc": "Un frère et une sœur, qui ne se sont connus qu'adultes, ont eu des enfants ensemble. Le frère est condamné en vertu du § 173 StGB (Code pénal), qui punit les relations sexuelles entre frère et sœur. Il invoque son droit à l'autodétermination sexuelle.",
+   "questions": [
+    "La vie sexuelle relève-t-elle en principe du noyau le plus protégé de la vie privée ?",
+    "Une relation qui a des effets sur la famille, les enfants et la société reste-t-elle dans ce noyau intangible, ou entre-t-elle dans la zone de pesée ? Que décide la majorité ?",
+    "Résumez l'opinion dissidente du juge Hassemer. Comparez avec la France (l'inceste entre majeurs consentants n'est pas incriminé en tant que tel)."
+   ],
+   "choix": {
+    "enonce": "Le noyau intangible de la vie privée s'appelle le « ______ de la conduite de la vie privée ». En allemand :",
+    "options": [
+     "Innenraum",
+     "örtliche Abgeschiedenheit",
+     "Kernbereich privater Lebensgestaltung"
+    ]
+   },
+   "extrait": "« Absolut geschützt und damit der Einwirkung der öffentlichen Gewalt entzogen ist ein **Kernbereich privater Lebensgestaltung** […] » (BVerfGE 120, 224, p. 239)\n**Traduction :** « Est protégé de manière absolue, et donc soustrait à l'action des pouvoirs publics, un **noyau de la vie privée** […] »",
+   "liens": [
+    {
+     "label": "BVerfGE 120, 224 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv120224.html"
+    },
+    {
+     "label": "§ 173 StGB",
+     "url": "https://www.gesetze-im-internet.de/stgb/__173.html"
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "r": 4,
+   "c": 5,
+   "eleve": "Clémentine Boilletot",
+   "groupe": "La protection des données personnelles",
+   "seance": 2,
+   "ordre": 9,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2008",
+   "ref": "BVerfG, 27 février 2008, 1 BvR 370/07 e. a., BVerfGE 120, 274 (Online-Durchsuchung, « perquisition en ligne »)",
+   "fr": "Online-Durchsuchung",
+   "doc": "Une loi de Rhénanie-du-Nord-Westphalie autorise le service de renseignement intérieur (Verfassungsschutz) à infiltrer secrètement les ordinateurs. Droits existants : art. 10 GG (secret des télécommunications, pour les communications en cours), art. 13 GG (inviolabilité du domicile, lié à un lieu), autodétermination informationnelle (pièce 14, pour des collectes ponctuelles).",
+   "questions": [
+    "Pourquoi aucun de ces trois droits ne couvre-t-il entièrement l'accès à l'ordinateur ?",
+    "Que voit l'État quand il accède à tout un système informatique ? Faut-il un droit nouveau ? Que doit-il garantir (deux qualités du système) ?",
+    "Quelles conditions le BVerfG pose-t-il à l'infiltration ?"
+   ],
+   "choix": {
+    "enonce": "Le BVerfG crée le « droit fondamental à la confidentialité et à l'intégrité des systèmes ______ », surnommé en allemand le droit fondamental « IT ». En allemand :",
+    "options": [
+     "IT-Grundrecht",
+     "Fernmeldegeheimnis",
+     "informationelle Selbstbestimmung"
+    ]
+   },
+   "extrait": "« Das allgemeine Persönlichkeitsrecht (Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG) umfasst das Grundrecht auf Gewährleistung der Vertraulichkeit und Integrität informationstechnischer Systeme. » (BVerfGE 120, 274, principe 1)\n**Traduction :** « Le droit général de la personnalité (art. 2 al. 1 combiné à l'art. 1 al. 1 GG) comprend le **droit fondamental à la garantie de la confidentialité et de l'intégrité des systèmes informatiques**. »",
+   "liens": [
+    {
+     "label": "BVerfGE 120, 274 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv120274.html"
+    }
+   ],
+   "fr_trad": "perquisition en ligne"
+  },
+  {
+   "id": 30,
+   "r": 4,
+   "c": 6,
+   "eleve": "Raphaëlle Bissoulet",
+   "groupe": "La surveillance de l'espace public",
+   "seance": 2,
+   "ordre": 10,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2008",
+   "ref": "BVerfG, 11 mars 2008, 1 BvR 2074/05 e. a., BVerfGE 120, 378 ; BVerfG, 18 décembre 2018, 1 BvR 142/15, BVerfGE 150, 244 (Kennzeichenerfassung, « lecture automatisée des plaques »)",
+   "fr": "lecture des plaques",
+   "doc": "Des lois de Länder autorisent la police à lire automatiquement les plaques d'immatriculation et à les comparer à des fichiers de recherche. Si la plaque ne correspond à rien (pas de « Treffer », pas de concordance), elle est aussitôt effacée.",
+   "questions": [
+    "La plaque est visible de tous : où est l'atteinte à la vie privée ?",
+    "En 2008, le BVerfG estime qu'il n'y a pas d'atteinte (Eingriff) si la plaque sans concordance est effacée immédiatement. En 2018, il juge que chaque saisie est une atteinte, même sans concordance. Pourquoi ce changement ?",
+    "Question de groupe : comparez avec la vidéoprotection et la lecture des plaques (LAPI) en France."
+   ],
+   "choix": {
+    "enonce": "Depuis 2018, il y a « ______ même sans concordance ». En allemand :",
+    "options": [
+     "Gesetzesvorbehalt",
+     "Prävention",
+     "Eingriff ohne Treffer"
+    ]
+   },
+   "extrait": "« Eine automatisierte Kraftfahrzeugkennzeichenkontrolle begründet **Eingriffe** in das Grundrecht auf informationelle Selbstbestimmung […] auch wenn das Ergebnis zu einem „**Nichttreffer**“ führt und die Daten sogleich gelöscht werden […] » (BVerfG, 18 décembre 2018, 1 BvR 142/15, principe 1 (« en s'écartant de BVerfGE 120, 378 »))\n**Traduction :** « Un contrôle automatisé des plaques d'immatriculation constitue une **atteinte** au droit à l'autodétermination informationnelle […] même si le résultat est **négatif** (pas de concordance) et que les données sont aussitôt effacées. »",
+   "liens": [
+    {
+     "label": "BVerfG 1 BvR 142/15",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2018/12/rs20181218_1bvr014215.html"
+    },
+    {
+     "label": "BVerfGE 120, 378 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv120378.html"
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "r": 3,
+   "c": 6,
+   "eleve": "Paul Reinard",
+   "groupe": "La personne morale a-t-elle une vie privée ?",
+   "seance": 2,
+   "ordre": 11,
+   "cour": "BGH",
+   "badge": "BGH 2008",
+   "ref": "BGH, 11 mars 2008, VI ZR 7/07, AfP 2008, 297 (Gen-Milch, « lait génétique ») ; BVerfG (chambre), 8 septembre 2010, 1 BvR 1890/08",
+   "fr": "Gen-Milch",
+   "doc": "Greenpeace mène une campagne contre un grand groupe laitier, qualifiant de « Gen-Milch » (lait génétique) le lait de vaches nourries avec des aliments génétiquement modifiés. Le groupe demande l'interdiction de ce terme. Les juridictions de Cologne (LG puis OLG) statuent, puis le BGH rejette l'action ; la société saisit le BVerfG. Repère : art. 19 al. 3 GG (pièce 3).",
+   "questions": [
+    "Une entreprise a-t-elle une dignité et une vie intime ? A-t-elle une réputation sociale protégée ?",
+    "« Gen-Milch » est-il une affirmation de fait vérifiable, ou un slogan, une appréciation (Werturteil) ?",
+    "Que décident le BGH puis le BVerfG ? Question de groupe : la personne morale a-t-elle une « vie privée » ou seulement une réputation ?"
+   ],
+   "choix": {
+    "enonce": "L'entreprise a un « droit de la personnalité de l'______ », plus limité que celui des personnes humaines. En allemand :",
+    "options": [
+     "postmortaler Persönlichkeitsschutz",
+     "Unternehmenspersönlichkeitsrecht",
+     "allgemeine Handlungsfreiheit"
+    ]
+   },
+   "extrait": "« […] den Begriff „Gen-Milch“ als substanzarme Äußerung ansehen […] » (BVerfG, 8 septembre 2010, 1 BvR 1890/08, n° 21)\n**Traduction :** « […] considérer le terme « Gen-Milch » comme une expression pauvre en contenu […] (la Cour laisse ouverte, n° 25, la question d'un droit de la personnalité de l'entreprise protégé par les droits fondamentaux). »",
+   "liens": [
+    {
+     "label": "BVerfG 1 BvR 1890/08",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2010/09/rk20100908_1bvr189008.html"
+    }
+   ],
+   "fr_trad": "lait « OGM »"
+  },
+  {
+   "id": 32,
+   "r": 4,
+   "c": 7,
+   "eleve": "Marjorie Tome-Antunes",
+   "groupe": "Le secret des correspondances",
+   "seance": 2,
+   "ordre": 12,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2010",
+   "ref": "BVerfG, 2 mars 2010, 1 BvR 256/08 e. a., BVerfGE 125, 260 (Vorratsdatenspeicherung, « conservation des données de connexion »)",
+   "fr": "Vorratsdatenspeicherung",
+   "doc": "Transposant une directive européenne de 2006, une loi impose aux opérateurs de conserver pendant six mois les données de connexion de toute la population (qui appelle qui, quand, d'où), sans le contenu des communications. Repère : art. 10 GG, « Le secret de la correspondance ainsi que le secret des postes et des télécommunications sont inviolables ».",
+   "questions": [
+    "Le contenu des conversations n'est pas conservé. L'art. 10 GG protège-t-il aussi les circonstances de la communication ?",
+    "La conservation est-elle interdite en soi, ou la loi pèche-t-elle par l'absence de garanties ?",
+    "Pourquoi le BVerfG peut-il contrôler une loi qui transpose une directive ? Prolongement : CJUE, Digital Rights Ireland (8 avril 2014)."
+   ],
+   "choix": {
+    "enonce": "Le droit en cause est le « secret des ______ ». En allemand :",
+    "options": [
+     "Fernmeldegeheimnis",
+     "IT-Grundrecht",
+     "Kenntnis der eigenen Abstammung"
+    ]
+   },
+   "extrait": "« Das Briefgeheimnis sowie das Post- und **Fernmeldegeheimnis** sind unverletzlich. » (Art. 10 al. 1 GG)\n**Traduction :** « Le secret de la correspondance ainsi que le secret des postes et des **télécommunications** sont inviolables. »",
+   "liens": [
+    {
+     "label": "Art. 10 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_10.html"
+    },
+    {
+     "label": "BVerfGE 125, 260 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv125260.html"
+    }
+   ],
+   "fr_trad": "conservation préventive des données"
+  },
+  {
+   "id": 33,
+   "r": 3,
+   "c": 2,
+   "eleve": "Ella Cathala",
+   "groupe": "Le droit à l'image",
+   "seance": 2,
+   "ordre": 13,
+   "cour": "Europe",
+   "badge": "CEDH (GC) 2012",
+   "ref": "CEDH (Grande Chambre), 7 février 2012, von Hannover c. Allemagne (n° 2), req. n° 40660/08 et 60641/08",
+   "fr": "von Hannover n° 2",
+   "doc": "Caroline et son mari attaquent Caroline III (pièce 27), qui a admis la photo de vacances liée à la maladie du prince Rainier. La Grande Chambre (17 juges) dresse la liste des éléments à mettre en balance.",
+   "questions": [
+    "Énumérez les éléments que la Cour met en balance (contribution au débat, notoriété, comportement antérieur, contenu et forme de la publication, circonstances de la prise de vue).",
+    "Les juges allemands ont-ils appliqué ces éléments ? Y a-t-il violation de l'art. 8 ?",
+    "Que signifie ce résultat pour le rapport entre Strasbourg et Karlsruhe ? Même jour : Axel Springer c. Allemagne (liberté d'expression)."
+   ],
+   "choix": {
+    "enonce": "La Cour fixe une liste de « ______ de pesée ». En allemand :",
+    "options": [
+     "abgestuftes Schutzkonzept",
+     "Abwägungskriterien",
+     "Debatte von allgemeinem Interesse"
+    ]
+   },
+   "extrait": "« […] abgestuften Schutzkonzept der §§ 22, 23 KUG […], das sowohl mit verfassungsrechtlichen Vorgaben (vgl. BVerfGE 120, 180, 201 ff.) als auch mit der Rechtsprechung des Europäischen Gerichtshofs für Menschenrechte im Einklang steht (vgl. EGMR, NJW 2004, 2647 sowie NJW 2012, 1053 und 1058). » (BGH, 11 novembre 2014, VI ZR 9/14, n° 5 (NJW 2012, 1053 = von Hannover n° 2))\n**Traduction :** « […] le concept de protection gradué des §§ 22 et 23 KUG, conforme à la fois aux exigences constitutionnelles et à la jurisprudence de la Cour européenne des droits de l'homme (von Hannover n° 1 et n° 2). »",
+   "liens": [
+    {
+     "label": "HUDOC 001-109029",
+     "url": "https://hudoc.echr.coe.int/fre?i=001-109029"
+    },
+    {
+     "label": "Arrêt (lagen.nu)",
+     "url": "https://lagen.nu/dom/echr/001-109029"
+    },
+    {
+     "label": "BGH VI ZR 9/14 (Open Legal Data)",
+     "url": "https://de.openlegaldata.io/case/bgh-2014-11-11-vi-zr-914"
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "r": 3,
+   "c": 7,
+   "eleve": "Romane Testut",
+   "groupe": "Vie privée et vie professionnelle",
+   "seance": 2,
+   "ordre": 14,
+   "cour": "Travail",
+   "badge": "BAG 2017",
+   "ref": "BAG, 27 juillet 2017, 2 AZR 681/16 (Keylogger, « enregistreur de frappe »)",
+   "fr": "Keylogger",
+   "doc": "Un employeur installe sur les ordinateurs, après une simple information générale, un logiciel qui enregistre toutes les frappes au clavier et fait des captures d'écran. Il découvre ainsi qu'un salarié a utilisé l'ordinateur à des fins privées et le licencie. Le salarié n'a pas consenti à la mesure.",
+   "questions": [
+    "Quel aspect du droit de la personnalité est en cause (pièce 14) ?",
+    "Une surveillance totale, sans soupçon concret, est-elle proportionnée ?",
+    "Si le juge utilisait ces enregistrements pour juger le licenciement, ne commettrait-il pas lui-même une nouvelle atteinte ? Que doit-il faire des données ? Comparez avec Cass. ass. plén., 22 décembre 2023 (preuve déloyale)."
+   ],
+   "choix": {
+    "enonce": "Les données obtenues sont frappées d'une « interdiction d'______ » en justice. En allemand :",
+    "options": [
+     "Verwertungsverbot",
+     "Gesetzesvorbehalt",
+     "Recht auf Löschung"
+    ]
+   },
+   "extrait": "« Die Datenerhebung durch den Keylogger griff in das Recht des Klägers auf informationelle Selbstbestimmung ein. Der Kläger hat in die Maßnahme nicht eingewilligt. » (BAG, 27 juillet 2017, 2 AZR 681/16)\n**Traduction :** « La collecte de données par l'enregistreur de frappe a porté atteinte au droit du demandeur à l'autodétermination informationnelle. Le demandeur n'a pas consenti à la mesure (d'où l'**interdiction d'exploitation**). »",
+   "liens": [
+    {
+     "label": "BAG 2 AZR 681/16 (Open Legal Data)",
+     "url": "https://de.openlegaldata.io/case/bag-2017-07-27-2-azr-68116"
+    }
+   ],
+   "fr_trad": "enregistreur de frappe"
+  },
+  {
+   "id": 35,
+   "r": 4,
+   "c": 4,
+   "eleve": "Denadi Gaël Gandjo",
+   "groupe": "Vie privée et liberté sexuelle",
+   "seance": 2,
+   "ordre": 15,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2017",
+   "ref": "BVerfG, 10 octobre 2017, 1 BvR 2019/16, BVerfGE 147, 1 (Dritte Option, « troisième option »)",
+   "fr": "troisième option",
+   "doc": "Une personne intersexuée demande que son acte de naissance porte une mention autre que « féminin » ou « masculin ». La loi sur l'état civil ne prévoit que ces deux mentions ou l'absence de mention.",
+   "questions": [
+    "Le sexe auquel une personne s'identifie fait-il partie de sa personnalité ?",
+    "Quel autre article du GG est violé (art. 3 al. 3 : nul ne doit être désavantagé en raison de son sexe) ?",
+    "Quelle réponse le législateur a-t-il donnée en 2018 ? Comparez avec Cass. 1re civ., 4 mai 2017, n° 16-17.189, et CEDH, Y c. France, 31 janvier 2023, n° 76888/17."
+   ],
+   "choix": {
+    "enonce": "Le droit de la personnalité protège l'« identité de ______ ». En allemand :",
+    "options": [
+     "Selbstdarstellung",
+     "Kenntnis der eigenen Abstammung",
+     "geschlechtliche Identität"
+    ]
+   },
+   "extrait": "« Das allgemeine Persönlichkeitsrecht (Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG) schützt die **geschlechtliche Identität**. » (BVerfGE 147, 1, principe 1)\n**Traduction :** « Le droit général de la personnalité (art. 2 al. 1 combiné à l'art. 1 al. 1 GG) protège l'**identité de genre**. »",
+   "liens": [
+    {
+     "label": "BVerfGE 147, 1 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv147001.html"
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "r": 3,
+   "c": 3,
+   "eleve": "Aeata Pautehea",
+   "groupe": "Le droit à l'oubli",
+   "seance": 2,
+   "ordre": 16,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2019",
+   "ref": "BVerfG, 6 novembre 2019, 1 BvR 16/13, BVerfGE 152, 152 (Recht auf Vergessen I, « droit à l'oubli I »)",
+   "fr": "Recht auf Vergessen I",
+   "doc": "En 1982, un homme est condamné pour le meurtre de deux personnes à bord du voilier « Apollonia ». Les articles du Spiegel de l'époque, avec son nom, sont restés accessibles dans les archives en ligne et apparaissent dans les moteurs de recherche. Libéré, il demande que son nom n'y soit plus associé. Le BGH rejette sa demande. Repère : l'art. 85 RGPD laisse aux États une marge pour les médias (privilège des médias).",
+   "questions": [
+    "Le droit de l'Union est-il entièrement harmonisé dans ce domaine ? Quelles normes de droits fondamentaux le BVerfG applique-t-il alors en priorité : le GG ou la Charte ?",
+    "Ce qui était licite en 1982 peut-il devenir illicite trente ans plus tard ? Quel élément change la pesée ?",
+    "Le BVerfG exige-t-il la suppression des articles, ou une solution intermédiaire (déréférencement des recherches nominatives) ?"
+   ],
+   "choix": {
+    "enonce": "Le droit à l'oubli intègre dans la pesée le « ______ temps ». En allemand :",
+    "options": [
+     "Konvergenz",
+     "Zeitfaktor",
+     "Prävention"
+    ]
+   },
+   "extrait": "« Zur Zeitlichkeit der Freiheit gehört die Möglichkeit des Vergessens. » (BVerfGE 152, 152, principe 2 b)\n**Traduction :** « La possibilité de l'oubli fait partie de la dimension temporelle de la liberté (**facteur temps**). »",
+   "liens": [
+    {
+     "label": "BVerfGE 152, 152 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv152152.html"
+    }
+   ],
+   "fr_trad": "droit à l'oubli I"
+  },
+  {
+   "id": 37,
+   "r": 3,
+   "c": 4,
+   "eleve": "Pauline Boyer",
+   "groupe": "La vie privée du dirigeant",
+   "seance": 2,
+   "ordre": 17,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2019",
+   "ref": "BVerfG, 6 novembre 2019, 1 BvR 276/17, BVerfGE 152, 216 (Recht auf Vergessen II, « droit à l'oubli II »)",
+   "fr": "Recht auf Vergessen II",
+   "doc": "Une gérante de société est présentée dans un reportage télévisé de 2010 sur les méthodes des employeurs en matière de licenciement. Le reportage apparaît en tête des résultats Google pour son nom. Elle demande le déréférencement à Google ; les juridictions civiles le refusent. Ici, c'est le moteur de recherche qui est visé, domaine entièrement réglé par le RGPD.",
+   "questions": [
+    "Dans un domaine entièrement harmonisé par le droit de l'Union, quels droits fondamentaux s'appliquent : ceux du GG ou ceux de l'Union ?",
+    "Quels droits sont pesés (art. 7 et 8 : vie privée et données ; art. 16 : liberté d'entreprise de Google ; art. 11 : information du public) ?",
+    "Quel est le résultat ? Qu'a de nouveau le fait que le BVerfG applique lui-même ce texte ? Question de groupe : la gérante peut-elle invoquer une vie privée professionnelle ?"
+   ],
+   "choix": {
+    "enonce": "Le BVerfG applique pour la première fois la « ______ des droits fondamentaux de l'Union européenne ». En allemand :",
+    "options": [
+     "spezifisches Verfassungsrecht",
+     "sonstiges Recht",
+     "Grundrechtecharta"
+    ]
+   },
+   "extrait": "« Soweit das Bundesverfassungsgericht die **Charta der Grundrechte** der Europäischen Union als Prüfungsmaßstab anlegt […] » (BVerfGE 152, 216, principe 3 (extrait))\n**Traduction :** « Dans la mesure où la Cour constitutionnelle fédérale prend la **Charte des droits fondamentaux** de l'Union européenne comme norme de contrôle […] »",
+   "liens": [
+    {
+     "label": "BVerfGE 152, 216 (servat)",
+     "url": "https://www.servat.unibe.ch/dfr/bv152216.html"
+    }
+   ],
+   "fr_trad": "droit à l'oubli II"
+  },
+  {
+   "id": 38,
+   "r": 3,
+   "c": 5,
+   "eleve": "Lynn Zenners",
+   "groupe": "Le droit à l'oubli",
+   "seance": 2,
+   "ordre": 18,
+   "cour": "BGH",
+   "badge": "BGH 2020",
+   "ref": "BGH, 27 juillet 2020, VI ZR 405/18, BGHZ 226, 285 (déréférencement Google) ; OLG Francfort, 6 septembre 2018",
+   "fr": "déréférencement Google",
+   "doc": "L'ancien directeur du service régional d'une grande association caritative (Arbeiter-Samariter-Bund, Hesse centrale), qui a connu en 2011 un déficit d'environ un million d'euros, demande à Google de ne plus afficher, pour son nom, des articles de 2011 et 2012 relatant qu'il s'était mis en arrêt maladie au moment de la crise. Repère : art. 17 RGPD (en allemand, Art. 17 DSGVO), « droit à l'effacement » ; CJUE, Google Spain, 13 mai 2014.",
+   "questions": [
+    "Sur quel article du RGPD repose la demande ? Que permet-il d'obtenir ?",
+    "Le droit à l'effacement l'emporte-t-il automatiquement sur la liberté d'information, ou faut-il une pesée à égalité (pièce 37) ?",
+    "Retracez le parcours : LG, OLG Francfort, BGH. Le BGH suit-il la méthode fixée par le BVerfG quelques mois plus tôt ?"
+   ],
+   "choix": {
+    "enonce": "L'art. 17 RGPD consacre le « droit à l'______ » des données. En allemand :",
+    "options": [
+     "Recht auf Löschung",
+     "Anonymisierung",
+     "Verwertungsverbot"
+    ]
+   },
+   "extrait": "« Die betroffene Person hat das Recht, von dem Verantwortlichen zu verlangen, dass sie betreffende personenbezogene Daten unverzüglich gelöscht werden […] » (Art. 17 al. 1 RGPD, version allemande (intitulé : « Recht auf Löschung („Recht auf Vergessenwerden“) »))\n**Traduction :** « La personne concernée a le droit d'obtenir du responsable du traitement l'**effacement**, dans les meilleurs délais, de données à caractère personnel la concernant […] »",
+   "liens": [
+    {
+     "label": "RGPD (EUR-Lex, allemand)",
+     "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679"
+    },
+    {
+     "label": "BGH VI ZR 405/18 (Open Legal Data)",
+     "url": "https://de.openlegaldata.io/case/bgh-2020-07-27-vi-zr-40518"
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "r": 1,
+   "c": 7,
+   "eleve": "Amélie Chaix",
+   "groupe": "La vie privée des personnes publiques et des élus",
+   "seance": 2,
+   "ordre": 19,
+   "cour": "BVerfG",
+   "badge": "BVerfG 2021",
+   "ref": "BVerfG (chambre), 19 décembre 2021, 1 BvR 1073/20 (Künast)",
+   "fr": "Künast",
+   "doc": "Une femme politique écologiste, Renate Künast, est la cible d'injures sexistes sur Facebook. Pour poursuivre les auteurs, elle demande au juge civil d'autoriser Facebook à communiquer leur identité. Le Landgericht (tribunal régional) de Berlin, puis le Kammergericht (cour d'appel de Berlin), refusent pour l'essentiel : dans le contexte d'un débat politique, il n'y aurait pas d'outrage gratuit, donc pas d'injure punissable.",
+   "questions": [
+    "Pourquoi un litige sur la communication de données est-il, en réalité, un litige sur le droit de la personnalité ?",
+    "Les juges berlinois ont raisonné ainsi : si le propos n'est pas une attaque purement gratuite contre la personne, il est licite. Le BVerfG l'accepte-t-il, ou exige-t-il une pesée dans tous les autres cas ?",
+    "Les élus doivent-ils tout tolérer ? Question de groupe : comparez avec la protection des élus en droit français."
+   ],
+   "choix": {
+    "enonce": "L'attaque purement gratuite contre la personne, sans lien avec un débat, s'appelle la « critique ______ ». En allemand :",
+    "options": [
+     "Gegendarstellung",
+     "Selbstdarstellung",
+     "Schmähkritik"
+    ]
+   },
+   "extrait": "« Eine Abwägung ist nur ausnahmsweise entbehrlich, wenn die streitgegenständliche Äußerung sich als Schmähung oder **Schmähkritik**, als Formalbeleidigung oder als Angriff auf die Menschenwürde darstellt […] » (BVerfG, 19 décembre 2021, 1 BvR 1073/20, n° 29)\n**Traduction :** « Une pesée n'est exceptionnellement superflue que si le propos litigieux constitue un outrage ou une **critique outrageante**, une injure formelle ou une atteinte à la dignité humaine […] »",
+   "liens": [
+    {
+     "label": "BVerfG 1 BvR 1073/20",
+     "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/12/rk20211219_1bvr107320.html"
+    }
+   ],
+   "fr_trad": "insultes contre R. Künast"
+  },
+  {
+   "id": 40,
+   "r": 2,
+   "c": 4,
+   "eleve": null,
+   "groupe": null,
+   "seance": 2,
+   "ordre": 20,
+   "cour": "Cle",
+   "badge": "Art. 1 I GG",
+   "ref": "Art. 1 al. 1 GG : « Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt. »",
+   "fr": "la clé de voûte",
+   "doc": "",
+   "questions": [
+    "Regardez l'image entière.",
+    "Quelle pièce manquait pour faire tenir l'ensemble ?",
+    "Que montrent les lignes ?",
+    "Où sont le juge civil, le juge constitutionnel, Strasbourg ? Mot-clé : quel mot de l'art. 1 al. 1 GG est revenu dans presque toutes les pièces ?"
+   ],
+   "choix": null,
+   "extrait": "« Die Würde des Menschen ist unantastbar. Sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt. » (Art. 1 al. 1 GG)\n**Traduction :** « La **dignité** de l'être humain est intangible. Tous les pouvoirs publics ont l'obligation de la respecter et de la protéger. »",
+   "liens": [
+    {
+     "label": "Art. 1 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_1.html"
+    },
+    {
+     "label": "Art. 2 GG",
+     "url": "https://www.gesetze-im-internet.de/gg/art_2.html"
+    }
+   ]
+  }
+ ]
+}
