@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Puzzle Persönlichkeitsrecht</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,6 +75,7 @@ input[type=search]{font:inherit;padding:8px 10px;border:1px solid var(--line);bo
 .lx b{font-family:var(--display);font-size:17px;font-weight:600}
 .lx small{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:400}
 .lx span{color:var(--muted);line-height:1.4}
+.abrx{margin-top:10px;border-top:2px solid var(--line);padding-top:8px}
 .lexi summary{cursor:pointer;font-family:var(--display);font-size:16px;letter-spacing:.04em}
 .lexi h4{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted);margin:14px 0 4px}
 .src{margin:0;padding:12px 16px;background:var(--bg);border-left:3px solid var(--key);border-radius:0 4px 4px 0;font-size:15.5px}
@@ -92,6 +94,7 @@ input[type=search]{font:inherit;padding:8px 10px;border:1px solid var(--line);bo
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .choix{border:1px solid var(--line);border-radius:6px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
 .choix p{margin:0}
+.opts .tr{font-size:.85em;color:var(--muted);font-style:italic}
 .opts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .opts li{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:4px;padding:6px 10px;font-family:var(--display);font-size:18px;font-weight:600}
 .opts li span{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:400}
@@ -162,7 +165,7 @@ ol.q{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:6px}
 (() => {
 const COLS = 8, ROWS = 5, T = 240;
 const COLOR = {BVerfG:'--bverfg', BGH:'--bgh', Europe:'--europe', Travail:'--loi', Loi:'--doctrine', Cle:'--key'};
-const LABEL = {BVerfG:'Bundesverfassungsgericht', BGH:'Bundesgerichtshof', Europe:'Cour européenne des droits de l\'homme', Travail:'Bundesarbeitsgericht', Loi:'Loi', Cle:'Clé de voûte'};
+const LABEL = {BVerfG:'Bundesverfassungsgericht (Cour constitutionnelle fédérale)', BGH:'Bundesgerichtshof (Cour fédérale de justice)', Europe:'CEDH (Cour européenne des droits de l\'homme)', Travail:'Bundesarbeitsgericht (Cour fédérale du travail)', Loi:'Loi', Cle:'Clé de voûte'};
 const ETAGES = [['FONDATIONS','--row1'],['PRESSE ET ART','--row2'],['JUGE CIVIL','--row3'],['DIALOGUE DES JUGES','--row4'],['NOUVELLES SPHÈRES','--row5']];
 const KEYID = 40;
 const BREAKS = {
@@ -330,10 +333,76 @@ function pieceCard(p, withCorr){
     ${p.extrait?`<h3>Le texte</h3><blockquote class="src">${md(p.extrait)}</blockquote>`:''}
     ${(p.liens||[]).length?`<p class="note links">Textes intégraux : ${p.liens.filter(l=>/^https:\/\//.test(l.url)).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join(' · ')}</p>`:''}
     <h3>À préparer (5 à 10 minutes)</h3><ol class="q">${p.questions.map(q=>`<li>${md(q)}</li>`).join('')}</ol>
-    ${p.choix?`<div class="choix"><h3>Mot-clé à trouver</h3><p>${md(p.choix.enonce)}</p><ol class="opts">${p.choix.options.map((o,i)=>`<li${c && c.bonne && c.bonne.includes('('+'abc'[i]+')')?' class="good"':''}><span>${'abc'[i]}</span>${esc(o)}</li>`).join('')}</ol></div>`:''}
+    ${p.choix?`<div class="choix"><h3>Mot-clé à trouver</h3><p>${md(p.choix.enonce)}</p><ol class="opts">${p.choix.options.map((o,i)=>`<li${c && c.bonne && c.bonne.includes('('+'abc'[i]+')')?' class="good"':''}><span>${'abc'[i]}</span>${esc(o)}${KW_FR[o]?` <em class="tr">(${esc(KW_FR[o])})</em>`:''}</li>`).join('')}</ol></div>`:''}
     ${withCorr ? (c ? `<div class="corr"><b>Éléments de réponse</b><div>${md(c.reponse)}</div><b>Mot-clé de la case</b><div><strong>${esc(c.cle)}</strong>${c.cle_fr?` (${esc(c.cle_fr)})`:''}${c.bonne?` · ${esc(c.bonne)}`:''}</div></div>` : `<p class="note err">Corrigé non chargé (fichier corrige.json absent).</p>`)
       : `<p class="howto">Lundi, vous présenterez votre pièce en deux minutes environ, dans l'ordre chronologique des décisions. Choisissez le mot-clé allemand parmi les trois propositions : quand la salle est d'accord, la pièce se pose sur la planche et découvre son morceau de l'image.</p>`}
   </article>`;
+}
+
+// Traduction des mots-clés proposés (identique au corrigé, sans révéler la bonne réponse).
+const KW_FR = {"Abwägungskriterien": "critères de pesée", "Anonymisierung": "anonymisation", "Berücksichtigungspflicht": "obligation de prise en compte", "Debatte von allgemeinem Interesse": "débat d'intérêt général", "Eingriff ohne Treffer": "atteinte même sans concordance", "Fernmeldegeheimnis": "secret des télécommunications", "Gegendarstellung": "droit de réponse", "Geldentschädigung": "réparation en argent, indemnité", "Gesetzesvorbehalt": "réserve de loi", "Grundrechtecharta": "Charte des droits fondamentaux", "IT-Grundrecht": "droit fondamental à la confidentialité et à l'intégrité des systèmes informatiques", "Innenraum": "espace intérieur", "Je-desto-Formel": "formule « plus… plus »", "Kenntnis der eigenen Abstammung": "connaissance de ses propres origines", "Kernbereich privater Lebensgestaltung": "noyau de la vie privée", "Klärungsverfahren": "procédure de clarification", "Konvergenz": "convergence", "Menschenwürde": "dignité humaine", "Prävention": "prévention, dissuasion", "Recht am eigenen Bild": "droit à sa propre image", "Recht auf Löschung": "droit à l'effacement", "Resozialisierung": "réinsertion sociale", "Schmerzensgeld": "indemnité pour douleur, pretium doloris", "Schmähkritik": "critique outrageante", "Selbstdarstellung": "présentation de soi", "Sphärentheorie": "théorie des sphères", "Unternehmenspersönlichkeitsrecht": "droit de la personnalité de l'entreprise", "Verwertungsverbot": "interdiction d'exploitation de la preuve", "Zeitfaktor": "facteur temps", "abgestuftes Schutzkonzept": "concept de protection gradué", "absolute Person der Zeitgeschichte": "personne « absolue » de l'histoire contemporaine", "allgemeine Handlungsfreiheit": "liberté générale d'agir", "geschlechtliche Identität": "identité de genre", "informationelle Selbstbestimmung": "autodétermination informationnelle", "mittelbare Drittwirkung": "effet indirect des droits fondamentaux entre particuliers", "postmortaler Persönlichkeitsschutz": "protection de la personnalité après la mort", "richterliche Rechtsfortbildung": "développement prétorien du droit", "sonstiges Recht": "« autre droit » du § 823 al. 1 BGB", "spezifisches Verfassungsrecht": "droit constitutionnel spécifique", "örtliche Abgeschiedenheit": "isolement local, lieu retiré"};
+// Annexe au lexique : abréviations relevées dans la fiche (regex, forme développée, traduction).
+const ABR = [
+ [/\bBVerfG\b/,'BVerfG','Bundesverfassungsgericht','Cour constitutionnelle fédérale (Karlsruhe)'],
+ [/\bBVerfGE\b/,'BVerfGE','Entscheidungen des Bundesverfassungsgerichts','Recueil officiel des décisions du BVerfG (tome, page)'],
+ [/\bBVerfGG\b/,'BVerfGG','Bundesverfassungsgerichtsgesetz','Loi sur la Cour constitutionnelle fédérale'],
+ [/\bBvR\b/,'BvR','Registerzeichen für Verfassungsbeschwerden','Cote des recours constitutionnels individuels (ex. 1 BvR : Premier Sénat)'],
+ [/\bBvL\b/,'BvL','Registerzeichen für konkrete Normenkontrollen','Cote des renvois des juridictions au BVerfG (contrôle concret des normes)'],
+ [/\bBGH\b/,'BGH','Bundesgerichtshof','Cour fédérale de justice, juridiction suprême civile et pénale'],
+ [/\bBGHZ\b/,'BGHZ','Entscheidungen des Bundesgerichtshofes in Zivilsachen','Recueil officiel des arrêts civils du BGH'],
+ [/\bZR\b/,'ZR','Registerzeichen für Revisionen in Zivilsachen','Cote des pourvois civils au BGH (ex. VI ZR : VIe chambre civile)'],
+ [/\bBAG\b/,'BAG','Bundesarbeitsgericht','Cour fédérale du travail (Erfurt)'],
+ [/\bAZR\b/,'AZR','Registerzeichen für Revisionen beim BAG','Cote des pourvois devant le BAG'],
+ [/\bRGZ\b/,'RGZ','Entscheidungen des Reichsgerichts in Zivilsachen','Recueil des arrêts civils du Reichsgericht'],
+ [/\bRG\b/,'RG','Reichsgericht','Cour suprême du Reich (jusqu’en 1945)'],
+ [/\bOLG\b/,'OLG','Oberlandesgericht','Cour d’appel d’un Land'],
+ [/\bLG\b/,'LG','Landgericht','Tribunal régional (première instance)'],
+ [/\bGG\b/,'GG','Grundgesetz','Loi fondamentale (1949)'],
+ [/\bBGB\b/,'BGB','Bürgerliches Gesetzbuch','Code civil allemand (1900)'],
+ [/\bStGB\b/,'StGB','Strafgesetzbuch','Code pénal allemand'],
+ [/\bKUG\b/,'KUG','Kunsturhebergesetz','Loi de 1907 sur le droit d’auteur des œuvres d’art et de la photographie (droit à l’image)'],
+ [/\bDSGVO\b/,'DSGVO','Datenschutz-Grundverordnung','Règlement général sur la protection des données (RGPD)'],
+ [/\bRGPD\b/,'RGPD','Datenschutz-Grundverordnung (DSGVO)','Règlement général sur la protection des données, (UE) 2016/679'],
+ [/\bEGMR\b/,'EGMR','Europäischer Gerichtshof für Menschenrechte','Cour européenne des droits de l’homme'],
+ [/\bCEDH\b/,'CEDH','Europäischer Gerichtshof für Menschenrechte / EMRK','Cour (ou Convention) européenne des droits de l’homme'],
+ [/\(GC\)|\bGC\b/,'GC','Große Kammer','Grande Chambre de la Cour européenne des droits de l’homme'],
+ [/\bCJUE\b/,'CJUE','Gerichtshof der Europäischen Union (EuGH)','Cour de justice de l’Union européenne'],
+ [/\bNJW\b/,'NJW','Neue Juristische Wochenschrift','Revue juridique hebdomadaire (année, page)'],
+ [/\bAfP\b/,'AfP','Archiv für Presserecht','Revue de droit de la presse (année, page)'],
+ [/\bIT-/,'IT','Informationstechnik','Informatique (IT-Grundrecht : droit fondamental à la confidentialité et à l’intégrité des systèmes informatiques)'],
+ [/\bArt\.\s/,'Art.','Artikel','Article'],
+ [/§/,'§, §§','Paragraph(en)','Article(s) d’une loi allemande'],
+ [/\bAbs\.\s/,'Abs.','Absatz','Alinéa'],
+ [/\bi\.\s?V\.\s?m\./,'i.V.m.','in Verbindung mit','Combiné avec'],
+ [/\bvgl\./,'vgl.','vergleiche','Voir, comparer'],
+ [/\bff\./,'ff.','fortfolgende','Et suivantes'],
+ [/\bart\.\s/,'art.','Artikel','Article'],
+ [/\bal\.\s/,'al.','Absatz','Alinéa'],
+ [/\bphr\.\s/,'phr.','Satz','Phrase'],
+ [/n°/,'n°','Nummer / Randnummer','Numéro (d’affaire, ou paragraphe numéroté de la décision)'],
+ [/\bp\.\s\d/,'p.','Seite','Page'],
+ [/\be\.\s?a\./,'e. a.','und andere (u. a.)','Et autres (recours joints)'],
+ [/\sc\.\s[A-ZÉ]/,'c.','gegen','Contre (nom des parties)'],
+ [/\breq\./,'req.','Beschwerde','Requête (Cour européenne des droits de l’homme)'],
+ [/\bCass\./,'Cass.','Französischer Kassationsgerichtshof','Cour de cassation (France)'],
+ [/\bass\.\s?plén\./,'ass. plén.','Plenarversammlung','Assemblée plénière de la Cour de cassation'],
+ [/\bciv\./,'civ.','Zivilkammer / Zivilgesetzbuch','Chambre civile (Cass. 1re civ.) ; C. civ. : Code civil français'],
+ [/\bC\.\s?pén\./,'C. pén.','französisches Strafgesetzbuch','Code pénal français'],
+ [/\bRFA\b/,'RFA','Bundesrepublik Deutschland (BRD)','République fédérale d’Allemagne'],
+ [/\bZDF\b/,'ZDF','Zweites Deutsches Fernsehen','Deuxième chaîne publique de télévision'],
+ [/\bCDU\b/,'CDU','Christlich Demokratische Union Deutschlands','Union chrétienne-démocrate'],
+ [/\bSPD\b/,'SPD','Sozialdemokratische Partei Deutschlands','Parti social-démocrate'],
+ [/\bAPR\b/,'APR','allgemeines Persönlichkeitsrecht','Droit général de la personnalité'],
+ [/\bHUDOC\b/,'HUDOC','Datenbank des EGMR','Base de jurisprudence de la Cour européenne des droits de l’homme'],
+ [/\bLAPI\b/,'LAPI','automatische Kennzeichenerfassung','Lecture automatisée des plaques d’immatriculation'],
+ [/\bADN\b/,'ADN','DNA (Desoxyribonukleinsäure)','Acide désoxyribonucléique'],
+ [/\bOGM\b/,'OGM','gentechnisch veränderter Organismus (GVO)','Organisme génétiquement modifié'],
+];
+function abreviations(p){
+  const txt = [p.badge, p.ref, p.fr, p.fr_trad, p.doc, p.extrait, ...(p.questions||[]), p.choix ? p.choix.enonce + ' ' + p.choix.options.map(o => o + ' ' + (KW_FR[o]||'')).join(' ') : ''].filter(Boolean).join(' \n ');
+  const used = ABR.filter(a => a[0].test(txt));
+  if(!used.length) return '';
+  return `<details class="abrx" open><summary>Annexe : abréviations de la fiche (${used.length})</summary>${used.map(a=>`<div class="lx"><b>${esc(a[1])} <small>${esc(a[2])}</small></b><span>${esc(a[3])}</span></div>`).join('')}</details>`;
 }
 
 function lexique(p){
@@ -343,7 +412,7 @@ function lexique(p){
   const used = LX.filter(hit), row = e => `<div class="lx"><b>${esc(e.de)}${e.abr?` <small>${esc(e.abr)}</small>`:''}</b><span>${esc(e.fr)}</span></div>`;
   const cats = [...new Set(LX.map(e=>e.cat))];
   return `<aside class="panel lexi"><h3>Lexique</h3>${used.length?`<p class="note">Termes de votre pièce</p>${used.map(row).join('')}`:''}
-    <details${used.length?'':' open'}><summary>Lexique complet (${LX.length})</summary>${cats.map(c=>`<h4>${esc(c)}</h4>${LX.filter(e=>e.cat===c).map(row).join('')}`).join('')}</details></aside>`;
+    <details${used.length?'':' open'}><summary>Lexique complet (${LX.length})</summary>${cats.map(c=>`<h4>${esc(c)}</h4>${LX.filter(e=>e.cat===c).map(row).join('')}`).join('')}</details>${abreviations(p)}</aside>`;
 }
 
 // ---------- Assistant (Claude, sur le compte claude.ai de l'étudiant) ----------
@@ -380,6 +449,7 @@ async function remoteSample(pieceId, turns, {signal, onText}){
   catch(e){ throw {code: signal && signal.aborted ? 'cancelled' : 'network', text}; }
   return {text, truncated:false};
 }
+const mdChat = s => esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/(^|[^*])\*([^*\n]+)\*/g,'$1<em>$2</em>').replace(/^#{1,4}\s+/gm,'');
 async function initChat(p){
   const box = $('#chat'); if(!box) return;
   let sample = null; try{ sample = await (window.claude && window.claude.use ? window.claude.use('sample') : null); }catch(e){}
@@ -396,7 +466,7 @@ async function initChat(p){
   const msgs = $('#msgs'), ta = $('#q2'), err = $('#chatErr');
   const SUG = ['Explique-moi le contexte de cette décision', 'Quelles sources lire pour aller plus loin ?', 'Donne-moi un indice pour le mot-clé', 'Quel lien avec le droit français ?'];
   $('#chips').innerHTML = SUG.map(t=>`<button type="button" class="chip-q">${esc(t)}</button>`).join('');
-  const bubble = (role, text) => { const d = document.createElement('div'); d.className = 'msg ' + role; d.textContent = text; msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight; return d; };
+  const bubble = (role, text) => { const d = document.createElement('div'); d.className = 'msg ' + role; if(role === 'assistant') d.innerHTML = mdChat(text); else d.textContent = text; msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight; return d; };
   async function send(q){
     q = q.trim(); if(!q || ctl) return;
     err.hidden = true; bubble('user', q); ta.value = '';
@@ -405,8 +475,8 @@ async function initChat(p){
     if(!remote) hist[0] = {role:'user', content: piecePrompt(p) + '\n\nPremière question de l\'étudiant : ' + hist[0].content};
     const out = bubble('assistant', '…'); ctl = new AbortController(); $('#send').disabled = true; $('#stop').hidden = false;
     try{
-      const r = remote ? await remoteSample(p.id, hist, {signal:ctl.signal, onText:({text})=>{ out.textContent = text; msgs.scrollTop = msgs.scrollHeight; }}) : await sample(hist, {cache:false, signal:ctl.signal, onText:({text})=>{ out.textContent = text; msgs.scrollTop = msgs.scrollHeight; }});
-      out.textContent = r.text; turns.push({role:'assistant', content:r.text});
+      const r = remote ? await remoteSample(p.id, hist, {signal:ctl.signal, onText:({text})=>{ out.innerHTML = mdChat(text); msgs.scrollTop = msgs.scrollHeight; }}) : await sample(hist, {cache:false, signal:ctl.signal, onText:({text})=>{ out.innerHTML = mdChat(text); msgs.scrollTop = msgs.scrollHeight; }});
+      out.innerHTML = mdChat(r.text); turns.push({role:'assistant', content:r.text});
       if(r.truncated) bubble('note', 'Réponse coupée : demandez la suite.');
     }catch(e){
       if(e && e.text){ out.textContent = e.text + ' [interrompu]'; turns.push({role:'assistant', content:e.text}); }
@@ -432,7 +502,7 @@ function viewHome(){
   nav('home'); document.body.classList.remove('prof');
   const studs = DATA.pieces.filter(p=>p.eleve).sort((a,b)=>lastName(a.eleve).localeCompare(lastName(b.eleve),'fr'));
   $('#app').innerHTML = `
-    <p class="lede">Chaque étudiante et chaque étudiant détient <strong>une pièce</strong> : une décision ou un texte du droit allemand de la personnalité, avec un court exercice (5 à 10 minutes). Lundi, nous posons les pièces dans l'ordre chronologique, de 1907 à 2021 : séance 1 « Construire », séance 2 « Dialoguer ». Chaque case retournée révèle un mot-clé ; à la fin, l'image montre cinq étages du système, du <strong>Bundesverfassungsgericht</strong> au <strong>BGH</strong> et à Strasbourg, et trois sphères de protection autour d'une dernière pièce.</p>
+    <p class="lede">Chaque étudiante et chaque étudiant détient <strong>une pièce</strong> : une décision ou un texte du droit allemand de la personnalité, avec un court exercice (5 à 10 minutes). Lundi soir, nous posons les pièces dans l'ordre chronologique, de 1907 à 2021 : séance 1 « Construire », séance 2 « Dialoguer ». Chaque case retournée révèle un mot-clé ; à la fin, l'image montre cinq étages du système, du <strong>Bundesverfassungsgericht</strong> (Cour constitutionnelle fédérale) au <strong>BGH</strong> (Cour fédérale de justice) et à la <strong>CEDH</strong>, et trois sphères de protection autour d'une dernière pièce.</p>
     <div class="panel"><h2>Trouver ma pièce</h2><input type="search" id="q" placeholder="Tapez votre nom" aria-label="Rechercher votre nom"><div class="names" id="names"></div></div>
     <div class="boardbox">${boardSVG()}</div>${legend()}`;
   const render = f => { $('#names').innerHTML = studs.filter(p=>!f || p.eleve.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu,'').includes(f)).map(p=>`<a href="#p-${p.id}"><span>${esc(p.eleve)}</span><small>n° ${p.id}</small></a>`).join('') || '<p class="note">Aucun nom ne correspond. Écrivez à l\'enseignant.</p>'; };
@@ -479,8 +549,8 @@ async function viewProf(){
 }
 function reading(){
   return `<div class="panel"><h2>Lire l'image</h2><div class="reading">
-    <div><h3>Fondations et presse (L1, L2)</h3><p>Le BVerfG fonde le droit de la personnalité sur les art. 2 I et 1 I GG, le fait rayonner sur le droit civil (Lüth) et le met en balance avec les libertés de l'art. 5 GG.</p></div>
-    <div><h3>Juge civil et dialogue (L3, L4)</h3><p>Le BGH a créé l'APR (1954) et sa sanction (1958, 1961) ; Karlsruhe ne contrôle que le « droit constitutionnel spécifique » (Heck). Strasbourg a corrigé, Karlsruhe s'est adapté, puis s'est saisi de la Charte.</p></div>
+    <div><h3>Fondations et presse (L1, L2)</h3><p>Le BVerfG (Cour constitutionnelle fédérale) fonde le droit de la personnalité sur les art. 2 I et 1 I GG, le fait rayonner sur le droit civil (Lüth) et le met en balance avec les libertés de l'art. 5 GG.</p></div>
+    <div><h3>Juge civil et dialogue (L3, L4)</h3><p>Le BGH (Cour fédérale de justice) a créé l'APR (allgemeines Persönlichkeitsrecht, droit général de la personnalité, 1954) et sa sanction (1958, 1961) ; le BVerfG ne contrôle que le « droit constitutionnel spécifique » (spezifisches Verfassungsrecht, arrêt Heck). La CEDH a corrigé, le BVerfG s'est adapté, puis s'est saisi de la Charte.</p></div>
     <div><h3>Les sphères et la clé (L5, centre)</h3><p>Autour de la dignité (art. 1 I GG), la protection décroît de l'intime au social : le cœur est intangible, le reste se pèse. L'APR gagne de nouveaux terrains : famille, identité, numérique.</p></div>
   </div></div>`;
 }
